@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- attr_message的自定义xml属性-->
+    <declare-styleable name="attr_message">
+        <attr name="LeftText" format="reference|string"></attr>
+        <attr name="RightText" format="reference|string"></attr>
+
+        <!--View.VISIBLE-0-可见 View.INVISIBLE-4-不可见 View.GONE-8-隐藏-->
+        <attr name="IconVisible">
+            <enum name="visible" value="0"></enum>
+            <enum name="invisible" value="4"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+
+        <attr name="RightTextVisible">
+            <enum name="visible" value="0"></enum>
+            <enum name="invisible" value="4"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+
+        <attr name="RightArrowVisible">
+            <enum name="visible" value="0"></enum>
+            <enum name="invisible" value="4"></enum>
+            <enum name="gone" value="8"></enum>
+        </attr>
+    </declare-styleable>
+    <!-- attr_gender_item的自定义xml属性-->
+
+
+    <!-- attr_gender_item的自定义xml属性-->
+    <declare-styleable name="attr_gender_item">
+        <attr name="itemId" format="reference|string"></attr>
+        <attr name="itemText" format="reference|string"></attr>
+        <attr name="imageSrc" format="reference"></attr>
+        <attr name="mtextColor" format="color"></attr>
+
+        <!--false-0-没有选择.true-选择-->
+        <attr name="isSelete">
+            <enum name="mFalse" value="0"></enum>
+            <enum name="mTure" value="1"></enum>
+        </attr>
+
+    </declare-styleable>    <!-- attr_gender_item的自定义xml属性-->
+    <declare-styleable name="attr_examtime_time">
+        <attr name="examTimeId" format="reference|string"></attr>
+        <attr name="leftText" format="reference|string"></attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="attr_login_register">
+
+        <attr name="hintText" format="reference|string"></attr>
+        <attr name="leftImageSrc" format="reference"></attr>
+        <!--false-0-非密码.true-密码-->
+        <attr name="isPassword">
+            <enum name="mFalse" value="0"></enum>
+            <enum name="mTure" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PickerDataView">
+
+        <attr name="isLoop" format="boolean"/>
+
+    </declare-styleable>
+
+    <!--更换主题测试-->
+    <attr name="colorValue" format="color"/>
+    <attr name="floatValue" format="float"/>
+    <attr name="integerValue" format="integer"/>
+    <attr name="booleanValue" format="boolean"/>
+    <attr name="dimensionValue" format="dimension"/>
+    <attr name="stringValue" format="string"/>
+    <attr name="referenceValue" format="reference"/>
+
+    <!--leo added for KYLIN-496-->
+
+    <string-array name="mayuan">
+        <item>第一章 马克思主义是关于无产阶级和人类解放的科学</item>
+        <item>第二章 世界的物质性及其发展规律</item>
+        <item>第三章是 认识世界和改造世界</item>
+        <item>第四章是 人类社会及其发展规律</item>
+        <item>第五章是 资本主义的形成及其本质</item>
+        <item>第六章是 资本主义发展的历史进程</item>
+        <item>第七章是 社会主义社会及其发展</item>
+        <item>第八章是 共产主义是人类最崇高的社会理想</item>
+    </string-array>
+
+
+    <string-array name="maozhongte">
+        <item>第一章 马克思主义中国化两大理论成果</item>
+        <item>第二章 新民主主义革命理论</item>
+        <item>第三章 社会主义改造理论</item>
+        <item>第四章 社会主义建设道路初步探索的理论成果</item>
+        <item>第五章 建设中国特色社会主义总依据</item>
+        <item>第六章 社会主义本质和建设中国特色社会主义总任务</item>
+        <item>第七章 社会主义改革开放理论</item>
+        <item>第八章 建设中国特色社会主义总布局</item>
+        <item>第九章 实现祖国完全统一的理论</item>
+        <item>第十章 中国特色社会主义外交和国际战略</item>
+        <item>第十一章 建设中国特色社会主义的根本目的和依靠力量理论</item>
+        <item>第十二章 中国特色社会主义领导核心理论</item>
+    </string-array>
+
+    <string-array name="shigang">
+        <item>第一章 反对外国侵略的斗争</item>
+        <item>第二章 对国家出路的早期探索</item>
+        <item>第三章 辛亥革命与君主专制制度的终结</item>
+        <item>第四章 开天辟地的大事变</item>
+        <item>第五章 中国革命的新道路</item>
+        <item>第六章 中华民族的杭日战争</item>
+        <item>第七章 为新中国而奋斗</item>
+        <item>第八章 社会主义基木制度在中国的确立</item>
+        <item>第九章 社会主义建设在探索中曲折发展</item>
+        <item>第十章 改革开放与现代化建设新时期</item>
+    </string-array>
+
+    <string-array name="sixiu_faji">
+        <item>绪论</item>
+        <item>第1章 追求远大理想 坚定崇高信念</item>
+        <item>第2章 继承爱国传统 弘扬民族精神</item>
+        <item>第3章 领悟人生真谛 创造人生价值</item>
+        <item>第4章 加强道德修养 锤炼道德品质</item>
+        <item>第5章 遵守社会公德 维护公共秩序</item>
+        <item>第6章 培育职业精神 树立家庭美德</item>
+        <item>第7章 增强法律意识 弘扬法律精神</item>
+        <item>第8章 了解法律制度 自觉遵守法律</item>
+    </string-array>
+    <string-array name="shizheng">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_exam_communication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_circle_bg"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageview_exam_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/comment1" />
+
+        <TextView
+            android:id="@+id/textview_exam_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/imageview_exam_icon"
+            android:text="考试交流"
+            android:textColor="#404040"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/exam_communication_new_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/textview_exam_text"
+            android:background="@drawable/today_shape"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="今日5"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_exam_text"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageview_exam_icon"
+            android:text="考研政治复习交流区"
+            android:textColor="#bfbfbf"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_signup_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_circle_bg"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageview_enroll_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/comment2" />
+
+        <TextView
+            android:id="@+id/textview_enroll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/imageview_enroll_icon"
+            android:text="考研报考交流区"
+            android:textColor="#404040"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/textview_enroll_text"
+            android:background="@drawable/today_shape"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="今日5"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_enroll_text"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageview_enroll_icon"
+            android:text="考研政治复习交流区"
+            android:textColor="#bfbfbf"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_free_communication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_circle_bg"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageview_chat_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/comment3" />
+
+        <TextView
+            android:id="@+id/textview_chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/imageview_chat_icon"
+            android:text="灌水区"
+            android:textColor="#404040"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/textview_chat_text"
+            android:background="@drawable/today_shape"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="今日5"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_chat_text"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageview_chat_icon"
+            android:text="闲聊灌水区"
+            android:textColor="#bfbfbf"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_guess_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_circle_bg"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageview_subject_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/comment4" />
+
+        <TextView
+            android:id="@+id/textview_subject_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/imageview_subject_icon"
+            android:text="大家一起来押题"
+            android:textColor="#404040"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/textview_subject_text"
+            android:background="@drawable/today_shape"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="今日5"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_subject_text"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageview_subject_icon"
+            android:text="大家一起来押题交流区"
+            android:textColor="#bfbfbf"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

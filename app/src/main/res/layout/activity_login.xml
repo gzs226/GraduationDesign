@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView_user_icon"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/register_photo_icon" />
+    </LinearLayout>
+
+    <com.example.graduationdesign.view.LoginRegisterView
+        android:id="@+id/mview_login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintText="username"
+        app:leftImageSrc="@drawable/login_user_icon" />
+
+    <com.example.graduationdesign.view.LoginRegisterView
+        android:id="@+id/mview_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:isPassword="mTure"
+        app:hintText="password"
+        app:leftImageSrc="@drawable/login_pwd_icon" />
+
+
+    <Button
+        android:id="@+id/button_login_login"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_corner_add_ardess_button"
+        android:gravity="center"
+        android:text="登 录"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/button_login_register"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:background="@drawable/login_resgiter_text_bg"
+        android:gravity="center"
+        android:text="注 册"
+        android:textColor="#FF6C01"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7" />
+
+            <TextView
+                android:id="@+id/text_find_password"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:autoLink="all"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="@string/login_findback_password"
+                android:textColor="#0d5ff7"
+                android:textSize="10sp" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

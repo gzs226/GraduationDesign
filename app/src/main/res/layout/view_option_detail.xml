@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/lin_option_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/question_option_lin_bg">
+
+        <ImageView
+            android:id="@+id/imageview_option_a"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_options_select_no" />
+
+        <TextView
+            android:id="@+id/textview_option_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:text="马克思是 产阶级和人类解 原理"
+            android:textColor="#636363"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_option_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/question_option_lin_bg">
+
+        <ImageView
+            android:id="@+id/imageview_option_b"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_options_select_no" />
+
+        <TextView
+            android:id="@+id/textview_option_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:text="马克思是 产阶级和人类解 原理"
+            android:textColor="#636363"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_option_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/question_option_lin_bg">
+
+        <ImageView
+            android:id="@+id/imageview_option_c"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_options_select_no" />
+
+        <TextView
+            android:id="@+id/textview_option_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:text="马克思是 产阶级和人类解产阶级和人类解产阶级和人类解产阶级和人类解 原理"
+            android:textColor="#636363"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_option_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/question_option_lin_bg">
+
+        <ImageView
+            android:id="@+id/imageview_option_d"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_options_select_no" />
+
+        <TextView
+            android:id="@+id/textview_option_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:text="马克思是 产阶级和人类解 原理"
+            android:textColor="#636363"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

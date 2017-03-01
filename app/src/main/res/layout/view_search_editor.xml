@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="34dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edittext_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_editor_shape_edit"
+            android:gravity="center_vertical"
+            android:hint="请输入关键词"
+            android:maxLines="1"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageview_search_left"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/search_icon" />
+
+        <ImageView
+            android:id="@+id/imageview_search_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/edit_delete_icon" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="40dp"
+        android:layout_height="28dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/search_enter"
+        android:text="搜"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

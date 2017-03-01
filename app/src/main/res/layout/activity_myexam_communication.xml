@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lin_my_communication"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/user_personal_item_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/center_circle2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="我评论的"
+            android:textColor="#494949" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_indicator_right2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_communication_me"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/user_personal_item_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/center_circle3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="评论我的"
+            android:textColor="#494949" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_indicator_right2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_my_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/user_personal_item_bg"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp">
+
+        <com.example.graduationdesign.tool.CircleImageView
+            android:id="@+id/imageview_post_usericon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/register_photo_icon" />
+
+        <TextView
+            android:id="@+id/textview_post_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/imageview_post_usericon"
+            android:text="点击登录"
+            android:textColor="#404040"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textview_post_userid"
+            android:src="@drawable/male_icon" />
+
+        <TextView
+            android:id="@+id/textview_post_userschool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_post_userid"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imageview_post_usericon"
+            android:text="您还没有登录，无法获取信息"
+            android:textColor="#bfbfbf"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/imageview_praise_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/icon_indicator_right2" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="真题"
+        android:textColor="#393939"
+        android:textSize="12sp" />
+
+    <include layout="@layout/body_fragment_mymain" />
+</LinearLayout>

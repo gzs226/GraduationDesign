@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageview_difficulty_level_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="start1"
+        android:src="@drawable/raterstaruntruetwo" />
+
+    <ImageView
+        android:id="@+id/imageview_difficulty_level_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="start2"
+        android:src="@drawable/raterstaruntruetwo" />
+
+    <ImageView
+        android:id="@+id/imageview_difficulty_level_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="start3"
+        android:src="@drawable/raterstaruntruetwo" />
+
+    <ImageView
+        android:id="@+id/imageview_difficulty_level_4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="start4"
+        android:src="@drawable/raterstaruntruetwo" />
+
+    <ImageView
+        android:id="@+id/imageview_difficulty_level_5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="start5"
+        android:src="@drawable/raterstaruntruetwo" />
+</LinearLayout>

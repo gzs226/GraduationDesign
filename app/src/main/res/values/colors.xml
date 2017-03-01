@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="loginTopCorlor">#fffefe</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorUserText">#BABABA</color>
+    <color name="black">#000000</color>
+    <color name="HeaderBackColor">#fddd25</color>
+    <color name="search_edit_gray">#ffcccccc</color>
+    <color name="SearchLineColorNomal">#b3b2b2</color>
+    <color name="SearchLineColorPress">#fddd25</color>
+
+    <color name="main_lin_bg_normal">#fcfcfc</color>
+    <color name="main_lin_bg_pressed">#dedcdc</color>
+
+    <!--<color name="main_lin_bg_normal">#fddd25</color>-->
+    <!--<color name="main_lin_bg_pressed">#ceb004</color>-->
+
+    <color name="update_record_normal">#29bbfa</color>
+    <color name="update_record_pressed">#0c6991</color>
+
+    <color name="download_record_normal">#3dca16</color>
+    <color name="download_record_pressed">#236c0f</color>
+
+    <color name="NomalBack">#f1f1f1</color>
+    <color name="white">#ffffff</color>
+    <color name="lucensy">#00000001</color>
+    <color name="translucency">#e0000000</color>
+    <color name="orange">#ffa500</color>
+    <color name="blue">#0066dd</color>
+    <!-- <color name="red">#bf242a</color> -->
+    <color name="transparent">#00000000</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="LightGray">#f57c7c</color>
+    <color name="trans">#50000000</color>
+    <color name="red">#fe0202</color>
+    <color name="background">#e5e5e5</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="Grey">#BEBEBE</color>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#60000000"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/pop_system_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="我的学校"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="3dp"
+            android:background="#efeeee"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/change_password_bg">
+
+
+            <TextView
+                android:id="@+id/pop_system_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="IntlPhoneInput - 一个支持国际化的电话号码输入的自定义控件。
+                AndroidUI4Web - AndroidUI4Web是一个高性能的WebApp框架, 在移动浏览器上有与原生App一致的体验。
+                SmoothCheckBox - SmoothCheckBox带有切换动画的CheckBox。
+                AndroidTimelineViewx - AndroidTimelineViewx仿微信朋友圈 时间轴。
+                CityPicker - CityPicker仿美团等选择城市列表。"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#837212"
+                android:textSize="16sp"/>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/pop_system_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/gender_enter_button"
+            android:text="关闭"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"/>
+</LinearLayout>

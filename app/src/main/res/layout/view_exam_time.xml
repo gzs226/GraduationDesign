@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/merge_examtime_item"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/examtime_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="2016-12"
+        android:textColor="#4e4e4e"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/examtime_item_image"
+        android:layout_width="16dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/arrow_right" />
+</merge>

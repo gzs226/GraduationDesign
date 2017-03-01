@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_question_detailed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_header" />
+
+    <TextView
+        android:id="@+id/question_detail_chapter"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#e4e4e4"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="第一章 马克思是关于无产阶级和人类解于无产阶级和人类解放的原理"
+        android:textColor="#515151"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/question_detail_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="4. 马克思是关于无产阶级和人类解于无产阶级和人类解放的原理"
+                android:textColor="#464646"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#FFFFFF" />
+
+            <com.example.graduationdesign.view.OptionDetailView
+                android:id="@+id/question_detail_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="难度" />
+
+                <com.example.graduationdesign.view.DifficultyLevelView
+                    android:id="@+id/question_detail_difficulty_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/question_detail_comment_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/question_detail_comment_number_bg"
+                    android:lines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="评论100"
+                    android:textColor="#505050"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/question_detail_handin_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/question_detail_handin_answer"
+                android:padding="10dp"
+                android:text="提交答案" />
+
+            <LinearLayout
+                android:id="@+id/question_detail_lin_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="#f9f4e9"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[正确答案]"
+                    android:textColor="#ed2727"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/question_detail_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="D"
+                    android:textColor="#333232"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question_detail_lin_analysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#f9f4e9"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[答案解析]"
+                    android:textColor="#ed2727"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/question_detail_answer_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:text="015年6月3日 - 颜色拾取器(Color Cop),Color Cop 是一款适合网页设计师和程序员使用的多用途的颜色采取器,单文件、绿色、小巧(仅63KB)。它包含多种功能特性,具有取色器,放大镜..."
+                    android:textColor="#333232"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f4f4f4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/text_question_detail_comment"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/question_detailed_comment_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="写评论..."
+            android:textColor="#CDCDCD"/>
+
+        <ImageView
+            android:id="@+id/iamge_question_detail_collect"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_topic_detail_no_collect"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

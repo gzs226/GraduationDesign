@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mandroid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/user_message_header"
+        layout="@layout/view_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#efefef" />
+
+    <com.example.graduationdesign.view.GenderItemView
+        android:id="@+id/gender_item_man"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        mandroid:imageSrc="@drawable/cancel_iamge"
+        mandroid:itemId="man"
+        mandroid:itemText="男"
+        mandroid:mtextColor="#BABABA" />
+
+    <com.example.graduationdesign.view.GenderItemView
+        android:id="@+id/gender_item_woman"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        mandroid:imageSrc="@drawable/cancel_iamge"
+        mandroid:itemId="woman"
+        mandroid:itemText="女"
+        mandroid:mtextColor="#BABABA" />
+
+    <com.example.graduationdesign.view.GenderItemView
+        android:id="@+id/gender_item_secrecy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        mandroid:imageSrc="@drawable/cancel_iamge"
+        mandroid:isSelete="mTure"
+        mandroid:itemId="secrecy"
+        mandroid:itemText="保密"
+        mandroid:mtextColor="#BABABA" />
+</LinearLayout>

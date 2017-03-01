@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lin_show"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:lines="1"
+            android:text="本科专业"
+            android:textColor="@color/colorUserText"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+
+            android:id="@+id/right_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:lines="1"
+            android:text="广西师范大学"
+            android:textColor="@color/colorUserText"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/right_usericon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/user_default_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/right_imageview"
+            android:layout_width="16dp"
+            android:layout_height="10dp"
+            android:src="@drawable/arrow_right"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_editor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/table_shape"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageview_save_message"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:src="@drawable/save_iamge" />
+
+        <EditText
+            android:id="@+id/edittext_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="11111" />
+
+
+        <ImageView
+            android:id="@+id/imageview_cancel_message"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:src="@drawable/cancel_iamge" />
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+    </LinearLayout>
+</LinearLayout>

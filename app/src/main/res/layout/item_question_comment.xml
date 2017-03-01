@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textview_post_title0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="d"
+            android:textColor="#4b4b4b"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/text_question_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/textview_post_title0"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="这是题目"
+            android:textColor="#313131"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/text_question_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_post_title0"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:minHeight="20dp"
+            android:text="这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容这是发布的内容"
+            android:textColor="#737373"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/askbar_pinglunicon"/>
+
+        <TextView
+            android:id="@+id/text_comment_munber0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="12"
+            android:textSize="12sp"/>
+
+        <com.example.graduationdesign.view.MyImageView
+            android:id="@+id/iamge_questionif_praise"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="3dp"/>
+
+        <TextView
+            android:id="@+id/text_praise_munber0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="8"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>

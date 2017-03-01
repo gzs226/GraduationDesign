@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.graduationdesign.view.PostDetailListView
+            android:id="@+id/post_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ededed"
+            android:dividerHeight="5dp" />
+
+        <include
+            layout="@layout/view_hot_comment"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/view_new_comment"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/image_write_post"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/write_post" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

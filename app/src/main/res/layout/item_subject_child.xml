@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@drawable/subject_child_bg"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textview_subject_child_title"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="马原"
+        android:textColor="#808080"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/textview_subject_child_mainnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="519题"
+        android:textColor="#808080"
+        android:textSize="14sp"/>
+
+
+    <ImageView
+        android:id="@+id/imageview_subject_child_arrow"
+        android:layout_width="6dp"
+        android:layout_height="10dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_indicator_right2"/>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:background="@drawable/subject_group_bg"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageview_subject_group_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/shizheng"/>
+
+    <TextView
+        android:id="@+id/textview_subject_group_title"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="马原"
+        android:textColor="#3e3e3e"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/textview_subject_group_mainnumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="519题"
+        android:textColor="#808080"
+        android:textSize="14sp"/>
+
+
+    <ImageView
+        android:id="@+id/imageview_subject_group_arrow"
+        android:layout_width="18dp"
+        android:layout_height="14dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/arrow_right"/>
+</LinearLayout>
