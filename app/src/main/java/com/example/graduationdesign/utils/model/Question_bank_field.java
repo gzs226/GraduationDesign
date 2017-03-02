@@ -3,7 +3,10 @@ package com.example.graduationdesign.utils.model;
 public class Question_bank_field {
     public static final String DATABASENAME = "graduation_design.db";
     public static final int DATABASEVERSION = 1;
-    public static final String TABLENAME = "question_bank";
+    public static final String BANK_TABLENAME = "question_bank";
+    public static final String COLLECTION_TABLENAME = "question_collection";
+    public static final String NOTE_TABLENAME = "question_note";
+    public static final String WRONG_TABLENAME = "question_wrong";
 
     public static String id = "id";
     public static String question_id = "question_id";
@@ -21,4 +24,7 @@ public class Question_bank_field {
     public static String answer_analysis = "answer_analysis";//解析
     public static String user_do = "user_do";//用户是否做了此题
     public static String user_answer = "user_answer";//用户的答案
+
+    public static String note_text = "note_text";//用户的笔记
+
 }

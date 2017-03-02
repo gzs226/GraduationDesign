@@ -12,15 +12,21 @@ import android.widget.Toast;
 
 import com.android.volley.VolleyError;
 import com.example.graduationdesign.R;
+import com.example.graduationdesign.utils.CollectionTableOperate;
 import com.example.graduationdesign.utils.ConfigUserMessagePrefs;
 import com.example.graduationdesign.utils.Contents;
 import com.example.graduationdesign.utils.DatabaseHelper;
+import com.example.graduationdesign.utils.NoteTableOperate;
 import com.example.graduationdesign.utils.OnPopWindowsResultListener;
 import com.example.graduationdesign.utils.SelectQuestionDatas;
 import com.example.graduationdesign.utils.TableOperate;
+import com.example.graduationdesign.utils.model.CollectionDatas;
+import com.example.graduationdesign.utils.model.NoteDatas;
 import com.example.graduationdesign.utils.model.QuestionTransmit;
 import com.example.graduationdesign.utils.model.Question_bank;
+import com.example.graduationdesign.view.CollectionIconView;
 import com.example.graduationdesign.view.DifficultyLevelView;
+import com.example.graduationdesign.view.NoteIconView;
 import com.example.graduationdesign.view.OptionDetailView;
 import com.example.graduationdesign.view.PopWindowsChangeMessage;
 import com.example.graduationdesign.view.QuestionCommentListView;
@@ -59,6 +65,10 @@ public class QuestionDetailedActivity extends BaseActivity {
     LinearLayout questionDetailLinAnswer;
     @BindView(R.id.question_detail_lin_analysis)
     LinearLayout questionDetailLinAnalysis;
+    @BindView(R.id.collectview_collection)
+    CollectionIconView collectviewCollection;
+    @BindView(R.id.noteview_note)
+    NoteIconView noteviewNote;
 
     private int USER_ANSWER = -1;
     private int QuestionId = 1;
@@ -95,7 +105,7 @@ public class QuestionDetailedActivity extends BaseActivity {
     }
 
     private void getQuestionData() {
-        USER_ID = Integer.valueOf(ConfigUserMessagePrefs.getValue(QuestionDetailedActivity.this, Contents.USER_ID, ""));
+        USER_ID = Integer.valueOf(ConfigUserMessagePrefs.getValue(QuestionDetailedActivity.this, Contents.USER_ID, "1"));
         USER_NAME = ConfigUserMessagePrefs.getValue(QuestionDetailedActivity.this, Contents.USER_NAME, "");
         Intent intent = this.getIntent();
         mQuestionTransmit = (QuestionTransmit) intent.getSerializableExtra("questiondata");
@@ -106,12 +116,15 @@ public class QuestionDetailedActivity extends BaseActivity {
     }
 
     private void InitView() {
+        collectviewCollection.setQuestionId(mQuestionTransmit.getQuestion_id(), helper.getReadableDatabase());
+        noteviewNote.setQuestionId(mQuestionTransmit.getQuestion_id(), helper.getReadableDatabase());
+
         setViewModel(0);
         buttonAmended.setVisibility(View.INVISIBLE);
         headerCenterText.setText("" + mQuestionTransmit.getSubject());
         questionDetailChapter.setText("" + mQuestionTransmit.getChapter());
         questionDetailQuestion.setText("" + mQuestionTransmit.getQuestion_number() + "." +
-                                       mQuestionTransmit.getQuestion());
+                mQuestionTransmit.getQuestion());
         questionDetailOption.setAllText(mQuestionTransmit.getOption_a(), mQuestionTransmit.getOption_b(), mQuestionTransmit.getOption_c(), mQuestionTransmit.getOption_d());
         questionDetailDifficultyLevel.setDifficultyLevel(mQuestionTransmit.getDifficulty_level());
         questionDetailCommentNumber.setText("评论" + mQuestionTransmit.getComment_number() + "");
@@ -200,7 +213,7 @@ public class QuestionDetailedActivity extends BaseActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == TO_QUESTION_COMMENT_CODE &&
-            resultCode == QUESTION_COMMENT_BACK_QUESTION_CODE) {
+                resultCode == QUESTION_COMMENT_BACK_QUESTION_CODE) {
             commentText = data.getExtras().getString("commenttext");//得到新Activity关闭后返回的数据
             Log.e("onActivityResult", "onActivityResult: resultCode=" + resultCode);
             WriteQuestionComment();
@@ -209,7 +222,7 @@ public class QuestionDetailedActivity extends BaseActivity {
 
 
     @OnClick({R.id.linear_back, R.id.question_detail_comment_number,
-              R.id.question_detail_handin_answer, R.id.text_question_detail_comment})
+            R.id.question_detail_handin_answer, R.id.text_question_detail_comment, R.id.collectview_collection, R.id.noteview_note})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.linear_back:
@@ -224,8 +237,45 @@ public class QuestionDetailedActivity extends BaseActivity {
             case R.id.text_question_detail_comment:
                 toCommetnQuestionActivity();
                 break;
+            case R.id.collectview_collection:
+                InsertCollectionData();
+                collectviewCollection.setCollection();
+                break;
+            case R.id.noteview_note:
+                IsertNoteData(0);
+                break;
         }
     }
+
+    private void InsertCollectionData() {
+        CollectionTableOperate mCollectionTableOperate = new CollectionTableOperate(helper.getWritableDatabase());
+        CollectionDatas mNoteDatas = new CollectionDatas();
+        mNoteDatas.setQuestion_id(mQuestionTransmit.getQuestion_id());
+        mNoteDatas.setQuestion(mQuestionTransmit.getQuestion());
+        mCollectionTableOperate.Insert(mNoteDatas);
+        mCollectionTableOperate.closeDB();
+    }
+
+    private void IsertNoteData(int id) {
+        PopWindowsChangeMessage mPopWindowsuserschool = new PopWindowsChangeMessage(QuestionDetailedActivity.this, id);
+        mPopWindowsuserschool.setReturnEditTextDatainterface(PopWindowsResultListener);
+        mPopWindowsuserschool.setTitleAndHintText("笔记", "...");
+        mPopWindowsuserschool.showPopupWindow(noteviewNote);
+    }
+
+    private OnPopWindowsResultListener PopWindowsResultListener = new OnPopWindowsResultListener() {
+        @Override
+        public void TextData(String textData, int Id) {
+            NoteTableOperate mCollectionTableOperate = new NoteTableOperate(helper.getWritableDatabase());
+            NoteDatas mNoteDatas = new NoteDatas();
+            mNoteDatas.setQuestion_id(mQuestionTransmit.getQuestion_id());
+            mNoteDatas.setQuestion(mQuestionTransmit.getQuestion());
+            mNoteDatas.setNote_text(textData);
+            mCollectionTableOperate.Insert(mNoteDatas);
+            mCollectionTableOperate.closeDB();
+            noteviewNote.setNote();
+        }
+    };
 
     private void WriteQuestionComment() {
         PostCommentData mPostCommentData = new PostCommentData();

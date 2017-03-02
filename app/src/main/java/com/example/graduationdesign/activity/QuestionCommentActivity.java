@@ -83,7 +83,7 @@ public class QuestionCommentActivity extends BaseActivity implements QuestionCom
     }
 
     private void initData() {
-        USER_ID = Integer.valueOf(ConfigUserMessagePrefs.getValue(QuestionCommentActivity.this, Contents.USER_ID, ""));
+        USER_ID = Integer.valueOf(ConfigUserMessagePrefs.getValue(QuestionCommentActivity.this, Contents.USER_ID, "1"));
         USER_NAME = ConfigUserMessagePrefs.getValue(QuestionCommentActivity.this, Contents.USER_NAME, "");
         lstvcommentq.setQuestionTextView(mQuestionTransmit);
         setItemOnClickListener();

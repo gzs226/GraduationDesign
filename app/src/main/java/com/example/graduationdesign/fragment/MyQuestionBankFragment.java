@@ -12,7 +12,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.graduationdesign.R;
-import com.example.graduationdesign.activity.RecycleViewActivity;
+import com.example.graduationdesign.activity.CollectionBankActivity;
+import com.example.graduationdesign.activity.NoteBankActivity;
+import com.example.graduationdesign.activity.QuestionNumberActivity;
+import com.example.graduationdesign.activity.WrongBankActivity;
 import com.example.graduationdesign.adapter.SubjectAdapter;
 import com.example.graduationdesign.tool.Model.SubjectSort;
 import com.example.graduationdesign.tool.Model.Chapter;
@@ -110,7 +113,7 @@ public class MyQuestionBankFragment extends Fragment implements ExpandableListVi
     public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
         String name = childList.get(groupPosition).get(childPosition).getNumber() + "";
         Toast.makeText(getActivity(), "" + name, Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(getActivity(), RecycleViewActivity.class);
+        Intent intent = new Intent(getActivity(), QuestionNumberActivity.class);
         startActivity(intent);
         return false;
     }
@@ -201,11 +204,29 @@ public class MyQuestionBankFragment extends Fragment implements ExpandableListVi
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.lin_error_question:
+                ToErrorActivity();
                 break;
             case R.id.lin_collection_question:
+                ToCollectionActivity();
                 break;
             case R.id.lin_note_question:
+                ToNoteActivity();
                 break;
         }
+    }
+
+    private void ToErrorActivity() {
+        Intent intent = new Intent(getActivity(), WrongBankActivity.class);
+        startActivity(intent);
+    }
+
+    private void ToCollectionActivity() {
+        Intent intent = new Intent(getActivity(), CollectionBankActivity.class);
+        startActivity(intent);
+    }
+
+    private void ToNoteActivity() {
+        Intent intent = new Intent(getActivity(), NoteBankActivity.class);
+        startActivity(intent);
     }
 }

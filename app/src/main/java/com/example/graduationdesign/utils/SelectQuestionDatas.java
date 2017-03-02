@@ -21,7 +21,7 @@ public class SelectQuestionDatas {
     public List<Question_bank> findAllDatas() {
         List<Question_bank> mDatas = new ArrayList<Question_bank>();
         String sql = "SELECT * FROM " +
-                     Question_bank_field.TABLENAME;//+ " where " + Question_bank_field.question_id + " = 1";
+                     Question_bank_field.BANK_TABLENAME;//+ " where " + Question_bank_field.question_id + " = 1";
         //cursor = coordinate.rawQuery("select * from coordinates1 where id > ? order by id asc limit 0, 1 ", new String[]{sid});
         Cursor result = this.mDB.rawQuery(sql, null);
         while (result.moveToNext()) {
@@ -52,7 +52,7 @@ public class SelectQuestionDatas {
     public List<Question_bank> findDatasBySubjectChater(String subject, String chapter) {
         List<Question_bank> mDatas = new ArrayList<Question_bank>();
         String sql = "SELECT * FROM " +
-                     Question_bank_field.TABLENAME
+                     Question_bank_field.BANK_TABLENAME
                     + " where " + Question_bank_field.subject + " =  "+subject
                     +" and "+ Question_bank_field.chapter + " = "+ chapter;
         //cursor = coordinate.rawQuery("select * from coordinates1 where id > ? order by id asc limit 0, 1 ", new String[]{sid});
@@ -84,7 +84,7 @@ public class SelectQuestionDatas {
 
     public Question_bank findDataByQuestionId(int question_id) {
         Question_bank mDatas = new Question_bank();
-        String sql = "SELECT * FROM " + Question_bank_field.TABLENAME + " where " +
+        String sql = "SELECT * FROM " + Question_bank_field.BANK_TABLENAME + " where " +
                      Question_bank_field.question_id + " = " + question_id;
         //cursor = coordinate.rawQuery("select * from coordinates1 where id > ? order by id asc limit 0, 1 ", new String[]{sid});
         Cursor result = this.mDB.rawQuery(sql, null);
@@ -119,7 +119,7 @@ public class SelectQuestionDatas {
      * @return
      */
     public long allCaseNum() {
-        String sql = "select count(*) from  " + Question_bank_field.TABLENAME;
+        String sql = "select count(*) from  " + Question_bank_field.BANK_TABLENAME;
         Cursor cursor = mDB.rawQuery(sql, null);
         cursor.moveToFirst();
         long count = cursor.getLong(0);
@@ -133,7 +133,7 @@ public class SelectQuestionDatas {
      * @return
      */
     public long allCaseNumBySubject(String subject) {
-        String sql = "select count(*) from  " + Question_bank_field.TABLENAME + " where " +
+        String sql = "select count(*) from  " + Question_bank_field.BANK_TABLENAME + " where " +
                      Question_bank_field.subject + " = '" + subject + "'";
         Cursor cursor = mDB.rawQuery(sql, null);
         cursor.moveToFirst();

@@ -1,17 +1,13 @@
 package com.example.graduationdesign.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-
-
-import java.util.ArrayList;
-import java.util.List;
-
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.ViewHolder;
-import android.util.Log;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.graduationdesign.R;
@@ -20,24 +16,37 @@ import com.example.graduationdesign.tool.MyDividerGridItemDecoration;
 import com.example.graduationdesign.utils.DatabaseHelper;
 import com.example.graduationdesign.utils.OnRecyclerItemClickListener;
 import com.example.graduationdesign.utils.SelectQuestionDatas;
-import com.example.graduationdesign.utils.TableOperate;
 import com.example.graduationdesign.utils.model.QuestionTransmit;
 import com.example.graduationdesign.utils.model.Question_bank;
 
-public class RecycleViewActivity extends BaseActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+public class QuestionNumberActivity extends BaseActivity {
     private final String TAG = "RecycleViewActivity";
+    @BindView(R.id.header_center_text)
+    TextView headerCenterText;
+    @BindView(R.id.image_back)
+    ImageView imageBack;
+    @BindView(R.id.linear_back)
+    LinearLayout linearBack;
     private RecyclerView mRecyclerView;
     private List<String> mDatas;
     private QuestionNumberAdapter2 mAdapter;
     private DatabaseHelper helper;
-    private TableOperate mTableOperate;
     private SelectQuestionDatas mSelectQuestionDatas;
     private int dataLeng;
     List<Question_bank> mQuestion_banks;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycle_view);
+        ButterKnife.bind(this);
 
         operateSql();
 
@@ -54,7 +63,7 @@ public class RecycleViewActivity extends BaseActivity {
 
     private void select() {
         mSelectQuestionDatas = new SelectQuestionDatas(helper.getReadableDatabase());
-         mQuestion_banks = mSelectQuestionDatas.findDatasBySubjectChater("'马原'", "'第一章'");
+        mQuestion_banks = mSelectQuestionDatas.findDatasBySubjectChater("'马原'", "'第一章'");
         dataLeng = mQuestion_banks.size();
         //        for (Question_bank mQuestion_bank : mQuestion_banks) {
         //            Log.e(TAG, "select: " + mQuestion_bank.getChapter());
@@ -64,6 +73,7 @@ public class RecycleViewActivity extends BaseActivity {
     }
 
     private void InitView() {
+        headerCenterText.setText("马原");
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 5));
 
@@ -73,14 +83,14 @@ public class RecycleViewActivity extends BaseActivity {
         mRecyclerView.addOnItemTouchListener(new OnRecyclerItemClickListener(mRecyclerView) {
             @Override
             public void onItemClick(ViewHolder viewHolder) {
-                Toast.makeText(RecycleViewActivity.this,
+                Toast.makeText(QuestionNumberActivity.this,
                         "" + viewHolder.getAdapterPosition(), Toast.LENGTH_SHORT).show();
                 QuestionTransmit mQuestionTransmit = new QuestionTransmit();
                 mQuestionTransmit.setQuestion_id(mQuestion_banks.get(viewHolder.getAdapterPosition()).getQuestion_id());
                 mQuestionTransmit.setSubject(mQuestion_banks.get(viewHolder.getAdapterPosition()).getSubject());
                 mQuestionTransmit.setChapter(mQuestion_banks.get(viewHolder.getAdapterPosition()).getChapter());
                 mQuestionTransmit.setQuestion(mQuestion_banks.get(viewHolder.getAdapterPosition()).getQuestion());
-                mQuestionTransmit.setQuestion_number(viewHolder.getAdapterPosition()+1);
+                mQuestionTransmit.setQuestion_number(viewHolder.getAdapterPosition() + 1);
                 mQuestionTransmit.setOption_a(mQuestion_banks.get(viewHolder.getAdapterPosition()).getOption_a());
                 mQuestionTransmit.setOption_b(mQuestion_banks.get(viewHolder.getAdapterPosition()).getOption_b());
                 mQuestionTransmit.setOption_c(mQuestion_banks.get(viewHolder.getAdapterPosition()).getOption_c());
@@ -93,8 +103,7 @@ public class RecycleViewActivity extends BaseActivity {
                 mQuestionTransmit.setUser_answer(mQuestion_banks.get(viewHolder.getAdapterPosition()).getUser_answer());
 
 
-
-                Intent intent = new Intent(RecycleViewActivity.this, QuestionDetailedActivity.class);
+                Intent intent = new Intent(QuestionNumberActivity.this, QuestionDetailedActivity.class);
 
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("questiondata", mQuestionTransmit);
@@ -104,7 +113,7 @@ public class RecycleViewActivity extends BaseActivity {
 
             @Override
             public void onItemLOngClick(ViewHolder viewHolder) {
-                Toast.makeText(RecycleViewActivity.this,
+                Toast.makeText(QuestionNumberActivity.this,
                         "dddd" + viewHolder.getAdapterPosition(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -116,5 +125,10 @@ public class RecycleViewActivity extends BaseActivity {
         for (int i = 0; i < dataLeng; i++) {
             mDatas.add(i + 1 + "");
         }
+    }
+
+    @OnClick(R.id.linear_back)
+    public void onClick() {
+        finish();
     }
 }

@@ -15,7 +15,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE " + Question_bank_field.TABLENAME + " ("
+        String sql_bank = "CREATE TABLE " + Question_bank_field.BANK_TABLENAME + " ("
                 + Question_bank_field.id + " INTEGER  PRIMARY KEY AUTOINCREMENT ,"//id为主键，且自增
                 + Question_bank_field.question_id + " INTEGER NOT NULL,"//id为主键，且自增
                 + Question_bank_field.subject + " VARCHAR(20) NOT NULL,"//科目
@@ -33,13 +33,33 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + Question_bank_field.user_do + " INTEGER NOT NULL,"//用户是否做了此题
                 + Question_bank_field.user_answer + " INTEGER NOT NULL"//用户答案
                 + ");";
-        db.execSQL(sql);
+        db.execSQL(sql_bank);
+
+        String sql_collection = "CREATE TABLE " + Question_bank_field.COLLECTION_TABLENAME + " ("
+                + Question_bank_field.id + " INTEGER  PRIMARY KEY AUTOINCREMENT ,"//id为主键，且自增
+                + Question_bank_field.question_id + " INTEGER NOT NULL,"//id为主键，
+                + Question_bank_field.question + " VARCHAR(80) NOT NULL"//题目问题
+                + ");";
+        db.execSQL(sql_collection);
+
+        String sql_note = "CREATE TABLE " + Question_bank_field.NOTE_TABLENAME + " ("
+                + Question_bank_field.id + " INTEGER  PRIMARY KEY AUTOINCREMENT ,"//id为主键，且自增
+                + Question_bank_field.question_id + " INTEGER NOT NULL,"//id为主键，
+                + Question_bank_field.question + " VARCHAR(80) NOT NULL,"//题目问题
+                + Question_bank_field.note_text + " VARCHAR(50) NOT NULL"//解析
+                + ");";
+        db.execSQL(sql_note);
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        String sql = "DROP TABLE IF EXISTS " + Question_bank_field.TABLENAME;
+        String sql = "DROP TABLE IF EXISTS " + Question_bank_field.BANK_TABLENAME;
         db.execSQL(sql);
+        String sql_bank = "DROP TABLE IF EXISTS " + Question_bank_field.COLLECTION_TABLENAME;
+        db.execSQL(sql_bank);
+        String sql_collection = "DROP TABLE IF EXISTS " + Question_bank_field.NOTE_TABLENAME;
+        db.execSQL(sql_collection);
         this.onCreate(db);
     }
 }

@@ -41,7 +41,7 @@
         <activity android:name=".activity.TestViewActivity"/>
         <activity android:name=".activity.SplashActivity"/>
         <activity android:name=".activity.SearchQuestionActivity"/>
-        <activity android:name=".activity.RecycleViewActivity"/>
+        <activity android:name=".activity.QuestionNumberActivity"/>
         <activity android:name=".activity.MyexamCommunicationActivity"/>
         <activity android:name=".activity.MycircleActivity"/>
         <activity android:name=".activity.MymallActivity"/>
@@ -58,6 +58,9 @@
         <activity android:name=".activity.QuestionMainPostActivity"/>
         <activity android:name=".activity.SystemMessageActivity"/>
         <activity android:name=".activity.QuestionCommentActivity"/>
+        <activity android:name=".activity.CollectionBankActivity"/>
+        <activity android:name=".activity.NoteBankActivity"/>
+        <activity android:name=".activity.WrongBankActivity"/>
     </application>
 
 </manifest>

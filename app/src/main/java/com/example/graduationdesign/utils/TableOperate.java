@@ -36,7 +36,7 @@ public class TableOperate {
         mContentValues.put(Question_bank_field.answer_analysis, insetQuestion_bank.getAnswer_analysis());
         mContentValues.put(Question_bank_field.user_do, insetQuestion_bank.getUser_do());
         mContentValues.put(Question_bank_field.user_answer, insetQuestion_bank.getUser_answer());
-        this.mDB.insert(Question_bank_field.TABLENAME, null, mContentValues);
+        this.mDB.insert(Question_bank_field.BANK_TABLENAME, null, mContentValues);
         //this.mDB.close();
     }
 
@@ -47,7 +47,7 @@ public class TableOperate {
         ContentValues mContentValues = new ContentValues();
         mContentValues.put(Question_bank_field.comment_number, comment_number);
 
-        this.mDB.update(Question_bank_field.TABLENAME, mContentValues, WhereClause, WhereArgs);
+        this.mDB.update(Question_bank_field.BANK_TABLENAME, mContentValues, WhereClause, WhereArgs);
 
     }
 
@@ -58,7 +58,7 @@ public class TableOperate {
         ContentValues mContentValues = new ContentValues();
         mContentValues.put(Question_bank_field.user_do, user_do);
 
-        this.mDB.update(Question_bank_field.TABLENAME, mContentValues, WhereClause, WhereArgs);
+        this.mDB.update(Question_bank_field.BANK_TABLENAME, mContentValues, WhereClause, WhereArgs);
 
     }
 
@@ -69,7 +69,7 @@ public class TableOperate {
         ContentValues mContentValues = new ContentValues();
         mContentValues.put(Question_bank_field.user_answer, user_answer);
 
-        this.mDB.update(Question_bank_field.TABLENAME, mContentValues, WhereClause, WhereArgs);
+        this.mDB.update(Question_bank_field.BANK_TABLENAME, mContentValues, WhereClause, WhereArgs);
 
     }
 
@@ -77,12 +77,12 @@ public class TableOperate {
         String WhereClause = Question_bank_field.question_id + " = ?";
         String WhereArgs[] = new String[]{String.valueOf(question_id)};
 
-        this.mDB.delete(Question_bank_field.TABLENAME, WhereClause, WhereArgs);
+        this.mDB.delete(Question_bank_field.BANK_TABLENAME, WhereClause, WhereArgs);
 //        this.mDB.close();
     }
 
     public void DeleteAllData() {
-        this.mDB.delete(Question_bank_field.TABLENAME, null, null);
+        this.mDB.delete(Question_bank_field.BANK_TABLENAME, null, null);
 //        this.mDB.close();
     }
 

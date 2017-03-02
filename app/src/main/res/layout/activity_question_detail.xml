@@ -195,14 +195,17 @@
             android:text="写评论..."
             android:textColor="#CDCDCD"/>
 
-        <ImageView
-            android:id="@+id/iamge_question_detail_collect"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <com.example.graduationdesign.view.CollectionIconView
+            android:id="@+id/collectview_collection"
+            android:layout_width="wrap_content"
             android:layout_marginLeft="10dp"
-            android:padding="5dp"
-            android:src="@drawable/ic_topic_detail_no_collect"
-            />
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+
+        <com.example.graduationdesign.view.NoteIconView
+            android:id="@+id/noteview_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
