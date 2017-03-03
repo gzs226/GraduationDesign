@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.android.volley.VolleyError;
 import com.example.graduationdesign.R;
+import com.example.graduationdesign.tool.PackQuestionData;
 import com.example.graduationdesign.tool.StringsData2;
 import com.example.graduationdesign.utils.ConfigUserMessagePrefs;
 import com.example.graduationdesign.utils.Contents;
@@ -77,8 +78,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         linearBack.setVisibility(View.INVISIBLE);
         helper = new DatabaseHelper(this);
 
-        mEdittextUserUsername.setEditorString(ConfigUserMessagePrefs.getValue(LoginActivity.this,Contents.USER_NAME,"")+"");
-        mEdittextUserPassword.setEditorString(ConfigUserMessagePrefs.getValue(LoginActivity.this,Contents.USER_NAME,"")+"");
+        mEdittextUserUsername.setEditorString(ConfigUserMessagePrefs.getValue(LoginActivity.this, Contents.USER_NAME, "") + "");
+        mEdittextUserPassword.setEditorString(ConfigUserMessagePrefs.getValue(LoginActivity.this, Contents.USER_NAME, "") + "");
 
     }
 
@@ -86,7 +87,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button_login_login:
-                        //      Login();
+                //      Login();
                 Intent intent = new Intent();
                 intent.setClass(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
@@ -95,7 +96,13 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                 toRegister();
                 break;
             case R.id.text_find_password:
-                testData();
+                //testData();
+                String test = new PackQuestionData(LoginActivity.this).CollectionDataToString();
+                Log.e(TAG, "onClick: " + test);
+                test = new PackQuestionData(LoginActivity.this).QuestionDataToString();
+                Log.e(TAG, "onClick: " + test);
+                test = new PackQuestionData(LoginActivity.this).NoteDataToString();
+                Log.e(TAG, "onClick: " + test);
                 break;
         }
     }
@@ -115,10 +122,10 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                 Intent intent = new Intent();
                 intent.setClass(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
-                Log.e(TAG, "Success: "+ConfigUserMessagePrefs.getValue(LoginActivity.this,Contents.USER_ID,"")+"");
-                Log.e(TAG, "Success: "+ConfigUserMessagePrefs.getValue(LoginActivity.this,Contents.USER_NAME,"")+"");
-                Log.e(TAG, "Success: "+ConfigUserMessagePrefs.getValue(LoginActivity.this,Contents.USER_PASSWORD,"")+"");
-                Log.e(TAG, "Success: "+ConfigUserMessagePrefs.getValue(LoginActivity.this,Contents.USER_IS_LOGIN,false)+"");
+                Log.e(TAG, "Success: " + ConfigUserMessagePrefs.getValue(LoginActivity.this, Contents.USER_ID, "") + "");
+                Log.e(TAG, "Success: " + ConfigUserMessagePrefs.getValue(LoginActivity.this, Contents.USER_NAME, "") + "");
+                Log.e(TAG, "Success: " + ConfigUserMessagePrefs.getValue(LoginActivity.this, Contents.USER_PASSWORD, "") + "");
+                Log.e(TAG, "Success: " + ConfigUserMessagePrefs.getValue(LoginActivity.this, Contents.USER_IS_LOGIN, false) + "");
             }
 
             @Override
@@ -133,11 +140,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         });
     }
 
-    private void saveLoginMessage(String userid){
-        ConfigUserMessagePrefs.putValue(LoginActivity.this, Contents.USER_ID,userid);
-        ConfigUserMessagePrefs.putValue(LoginActivity.this, Contents.USER_NAME,mUsername);
-        ConfigUserMessagePrefs.putValue(LoginActivity.this, Contents.USER_PASSWORD,mPassword);
-        ConfigUserMessagePrefs.putValue(LoginActivity.this, Contents.USER_IS_LOGIN,true);
+    private void saveLoginMessage(String userid) {
+        ConfigUserMessagePrefs.putValue(LoginActivity.this, Contents.USER_ID, userid);
+        ConfigUserMessagePrefs.putValue(LoginActivity.this, Contents.USER_NAME, mUsername);
+        ConfigUserMessagePrefs.putValue(LoginActivity.this, Contents.USER_PASSWORD, mPassword);
+        ConfigUserMessagePrefs.putValue(LoginActivity.this, Contents.USER_IS_LOGIN, true);
     }
 
     private void toRegister() {
@@ -176,7 +183,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             insetQuestion_bank.setUser_do(0);
             insetQuestion_bank.setUser_do(-1);
             mTableOperate.Insert(insetQuestion_bank);
-          Log.e("mQuestionData2--------", "testData: " + d.getQuestion_id());
+            Log.e("mQuestionData2--------", "testData: " + d.getQuestion_id());
         }
         mTableOperate.closeDB();
     }
