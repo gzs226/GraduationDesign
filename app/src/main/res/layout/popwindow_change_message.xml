@@ -28,7 +28,7 @@
             android:gravity="center"
             android:padding="5dp"
             android:text="我的学校"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/but_dialog_frame"
             android:textSize="20sp" />
 
 
@@ -75,7 +75,7 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="取消"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/but_dialog_frame"
                 android:textSize="16sp" />
 
             <View
@@ -92,7 +92,7 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="确认"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/but_dialog_frame"
                 android:textSize="16sp" />
 
         </LinearLayout>

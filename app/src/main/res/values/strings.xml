@@ -15,8 +15,8 @@
     <drawable name="system_message_bg_normal">#fffefe</drawable>
     <drawable name="system_message_bg_pressed">#e6e5e4</drawable>
 
-    <drawable name="subject_group_bg_normal">#ffffff</drawable>
-    <drawable name="subject_group_bg_pressed">#ffe59d</drawable>
+    <drawable name="subject_group_bg_normal">@color/item_bg_normal</drawable>
+    <drawable name="subject_group_bg_pressed">@color/item_bg_press</drawable>
 
     <drawable name="subject_child_bg_normal">#f4f4f4</drawable>
     <drawable name="subject_child_bg_pressed">#ffe59d</drawable>
@@ -24,8 +24,8 @@
     <!--<drawable name="main_lin_bg_normal">#fddd25</drawable>-->
     <!--<drawable name="main_lin_bg_pressed">#ceb004</drawable>-->
 
-    <drawable name="main_lin_bg_normal">#ffffff</drawable>
-    <drawable name="main_lin_bg_pressed">#ededed</drawable>
+    <drawable name="main_lin_bg_normal">@color/menu_bg_normal</drawable>
+    <drawable name="main_lin_bg_pressed">@color/menu_bg_press</drawable>
 
 
     <drawable name="question_option_lin_bg_normal">#ffffff</drawable>

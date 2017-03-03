@@ -23,7 +23,7 @@
             android:gravity="center"
             android:lines="1"
             android:text="本科专业"
-            android:textColor="@color/colorUserText"
+            android:textColor="@color/but_dialog_frame"
             android:textSize="14sp" />
 
         <View

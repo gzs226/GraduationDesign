@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f2f2f2"
+    android:background="@color/main_bg"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
@@ -25,7 +25,7 @@
             android:layout_marginRight="5dp"
             android:gravity="center"
             android:text="点亮我:"
-            android:textColor="#f21c1c"
+            android:textColor="@color/text_wrong_option"
             android:textSize="14sp" />
 
         <ImageView
@@ -68,14 +68,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#efecec"
+        android:background="@color/say_text_bg"
         android:gravity="bottom"
         android:paddingBottom="5dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:paddingTop="5dp"
         android:text="说点什么吧"
-        android:textColor="#c69f15"
+        android:textColor="@color/say_text"
         android:textSize="16sp" />
 
 
@@ -91,7 +91,7 @@
         android:hint="我想说..."
         android:padding="5dp"
         android:text=""
-        android:textColor="#4e4e4e"
+        android:textColor="@color/text_item"
         android:textCursorDrawable="@drawable/color_cursor"
         android:textSize="14sp" />
 
@@ -102,7 +102,7 @@
         android:layout_margin="50dp"
         android:background="@drawable/search_enter"
         android:text="评价"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/head_title_text"
         android:textSize="16sp" />
 
 </LinearLayout>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <color name="login_bg">#ffffff</color>
     <!--登录+注册-->
+    <color name="head_title_line">#e4ca37</color>
     <color name="head_title_bg">#fddd25</color>
     <color name="head_title_text">#ffffff</color>
     <color name="edit_hint_text">#7b7b7b</color>
@@ -13,6 +17,7 @@
     <!--登录+注册-->
     <!--主界面-->
     <color name="main_bg">#f2f2f2</color>
+    <color name="main_line">#e4e4e4</color>
 
     <color name="menu_bg_normal">#ffffff</color>
     <color name="menu_bg_press">#ededed</color>
@@ -26,13 +31,14 @@
     <color name="chapter_bg_normal">#f4f4f4</color>
     <color name="chapter_bg_press">#ffe59d</color>
     <color name="text_chapter">#808080</color>
+    <color name="expand_list_line">#dadada</color>
 
     <color name="new_mes_bg">#f2600b</color>
     <color name="text_new_mes">#ffffff</color>
 
     <color name="text_item">#3e3e3e</color>
     <color name="text_note">#3e3e3e</color>
-    <color name="text_item_detail">#3e3e3e</color>
+    <color name="text_item_detail">#767676</color>
     <!--主界面-->
     <!--选题界面-->
     <color name="text_chapter_detail">#e49a22</color>
@@ -67,9 +73,21 @@
     <color name="but_dialog_frame">#f78b18</color>
     <!--个人信息修改界面-->
 
+    <!--aPP评价界面-->
+    <color name="say_text_bg">#efecec</color>
+    <color name="say_text">#c69f15</color>
+    <!--aPP评价界面-->
+
     <!--<color name="main_lin_bg_normal">#fddd25</color>-->
     <!--<color name="main_lin_bg_pressed">#ceb004</color>-->
-
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorUserText">#BABABA</color>
+    <color name="black">#000000</color>
+    <color name="HeaderBackColor">#fddd25</color>
+    <color name="search_edit_gray">#ffcccccc</color>
+    <color name="SearchLineColorNomal">#b3b2b2</color>
     <color name="update_record_normal">#29bbfa</color>
     <color name="update_record_pressed">#0c6991</color>
 
@@ -83,7 +101,6 @@
     <color name="orange">#ffa500</color>
     <color name="blue">#0066dd</color>
     <!-- <color name="red">#bf242a</color> -->
-    <color name="transparent">#00000000</color>
     <color name="light_orange">#fcb75c</color>
     <color name="alpha_00">#00000000</color>
     <color name="LightGray">#f57c7c</color>

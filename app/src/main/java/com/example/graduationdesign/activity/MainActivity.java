@@ -2,6 +2,7 @@ package com.example.graduationdesign.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -138,7 +139,6 @@ public class MainActivity extends BaseActivity {
     private void changeTextAndBgColor(int index) {
         switch (index) {
             case R.id.lin_question_bank:
-
                 setQuestionBank();
                 break;
             case R.id.lin_social_comment:
@@ -151,45 +151,45 @@ public class MainActivity extends BaseActivity {
     }
 
     private void setQuestionBank() {
-        linQuestionBank.setBackgroundResource(R.color.main_lin_bg_pressed);
+        linQuestionBank.setBackgroundResource(R.color.menu_bg_press);
         imageviewQuestionBank.setImageResource(R.drawable.homepage_bottom_question_database_press);
-        textviewQuestionBank.setTextColor(MyColor.MAIN_MENU_RED);
+        textviewQuestionBank.setTextColor(ContextCompat.getColor(this,R.color.menu_text_press));
 
-        linSocialComment.setBackgroundResource(R.color.main_lin_bg_normal);
+        linSocialComment.setBackgroundResource(R.color.menu_bg_normal);
         imageviewSocialComment.setImageResource(R.drawable.homepage_bottom_circle_default);
-        textviewSocialComment.setTextColor(MyColor.MAIN_MENU_GRAY);
+        textviewSocialComment.setTextColor(ContextCompat.getColor(this,R.color.menu_text_normal));
 
-        linUserInformation.setBackgroundResource(R.color.main_lin_bg_normal);
+        linUserInformation.setBackgroundResource(R.color.menu_bg_normal);
         imageviewUserInformation.setImageResource(R.drawable.homepage_bottom_personal_center_default);
-        textviewUserInformation.setTextColor(MyColor.MAIN_MENU_GRAY);
+        textviewUserInformation.setTextColor(ContextCompat.getColor(this,R.color.menu_text_normal));
     }
 
     private void setSocialComment() {
-        linQuestionBank.setBackgroundResource(R.color.main_lin_bg_normal);
+        linQuestionBank.setBackgroundResource(R.color.menu_bg_normal);
         imageviewQuestionBank.setImageResource(R.drawable.homepage_bottom_question_database_default);
-        textviewQuestionBank.setTextColor(MyColor.MAIN_MENU_GRAY);
+        textviewQuestionBank.setTextColor(ContextCompat.getColor(this,R.color.menu_text_normal));
 
-        linSocialComment.setBackgroundResource(R.color.main_lin_bg_pressed);
+        linSocialComment.setBackgroundResource(R.color.menu_bg_press);
         imageviewSocialComment.setImageResource(R.drawable.homepage_bottom_circle_press);
-        textviewSocialComment.setTextColor(MyColor.MAIN_MENU_RED);
+        textviewSocialComment.setTextColor(ContextCompat.getColor(this,R.color.menu_text_press));
 
-        linUserInformation.setBackgroundResource(R.color.main_lin_bg_normal);
+        linUserInformation.setBackgroundResource(R.color.menu_bg_normal);
         imageviewUserInformation.setImageResource(R.drawable.homepage_bottom_personal_center_default);
-        textviewUserInformation.setTextColor(MyColor.MAIN_MENU_GRAY);
+        textviewUserInformation.setTextColor(ContextCompat.getColor(this,R.color.menu_text_normal));
     }
 
     private void setUserInformation() {
-        linQuestionBank.setBackgroundResource(R.color.main_lin_bg_normal);
+        linQuestionBank.setBackgroundResource(R.color.menu_bg_normal);
         imageviewQuestionBank.setImageResource(R.drawable.homepage_bottom_question_database_default);
-        textviewQuestionBank.setTextColor(MyColor.MAIN_MENU_GRAY);
+        textviewQuestionBank.setTextColor(ContextCompat.getColor(this,R.color.menu_text_normal));
 
-        linSocialComment.setBackgroundResource(R.color.main_lin_bg_normal);
+        linSocialComment.setBackgroundResource(R.color.menu_bg_normal);
         imageviewSocialComment.setImageResource(R.drawable.homepage_bottom_circle_default);
-        textviewSocialComment.setTextColor(MyColor.MAIN_MENU_GRAY);
+        textviewSocialComment.setTextColor(ContextCompat.getColor(this,R.color.menu_text_normal));
 
-        linUserInformation.setBackgroundResource(R.color.main_lin_bg_pressed);
+        linUserInformation.setBackgroundResource(R.color.menu_bg_press);
         imageviewUserInformation.setImageResource(R.drawable.homepage_bottom_personal_center_press);
-        textviewUserInformation.setTextColor(MyColor.MAIN_MENU_RED);
+        textviewUserInformation.setTextColor(ContextCompat.getColor(this,R.color.menu_text_press));
     }
 
 

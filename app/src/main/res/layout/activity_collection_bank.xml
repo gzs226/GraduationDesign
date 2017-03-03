@@ -11,7 +11,7 @@
         android:id="@+id/list_collection_bank"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="#ededed"
+        android:divider="@color/expand_list_line"
         android:dividerHeight="5dp" />
 
 </LinearLayout>

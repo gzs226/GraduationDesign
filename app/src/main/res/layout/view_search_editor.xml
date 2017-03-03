@@ -54,5 +54,5 @@
         android:layout_marginRight="30dp"
         android:background="@drawable/search_enter"
         android:text="搜"
-        android:textColor="#FFFFFF" />
+        android:textColor="@color/head_title_text" />
 </LinearLayout>

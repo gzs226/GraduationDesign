@@ -20,7 +20,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //  setContentView(R.body_fragment_mymain.activity_base);
         IfHintActionBar(true);
-        setTopTitleColor(R.color.SearchLineColorPress);
+        setTopTitleColor(R.color.head_title_bg);
     }
 
     public void IfHintActionBar(boolean hint) {

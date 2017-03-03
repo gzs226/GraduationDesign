@@ -23,7 +23,7 @@
                 android:layout_centerVertical="true"
                 android:padding="10dp"
                 android:text="取消"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/but_dialog_frame"
                 android:textSize="16sp" />
 
 
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="请选择时间"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/but_dialog_frame"
                 android:textSize="20sp" />
 
 
@@ -45,7 +45,7 @@
                 android:layout_centerVertical="true"
                 android:padding="10dp"
                 android:text="选择"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/but_dialog_frame"
                 android:textSize="16sp" />
 
         </RelativeLayout>

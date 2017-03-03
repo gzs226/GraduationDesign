@@ -3,6 +3,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/main_bg"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -17,11 +18,17 @@
         android:id="@+id/bt_camera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/my_circle_bg"
         android:text="相机" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
 
     <Button
         android:id="@+id/bt_xiangce"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/my_circle_bg"
         android:text="相册" />
 </LinearLayout>
