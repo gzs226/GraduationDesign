@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:mandroid="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
+              xmlns:mandroid="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
 
     <include
         android:id="@+id/user_message_header"
-        layout="@layout/view_header" />
+        layout="@layout/view_header"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#f1f0f0">
+        android:background="@color/main_bg">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +28,7 @@
                 android:layout_marginTop="15dp"
                 mandroid:IconVisible="visible"
                 mandroid:LeftText="头像"
-                mandroid:RightTextVisible="gone" />
+                mandroid:RightTextVisible="gone"/>
 
             <com.example.graduationdesign.view.UserMessageView
                 android:id="@+id/userview_nickname"
@@ -35,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 mandroid:LeftText="昵称"
-                mandroid:RightText="我只是个过客" />
+                mandroid:RightText="我只是个过客"/>
 
             <com.example.graduationdesign.view.UserMessageView
                 android:id="@+id/userview_gender"
@@ -43,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 mandroid:LeftText="性别"
-                mandroid:RightText="男" />
+                mandroid:RightText="男"/>
 
             <com.example.graduationdesign.view.UserMessageView
                 android:id="@+id/userview_userschool"
@@ -51,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 mandroid:LeftText="本科院校"
-                mandroid:RightText="广西师范大学" />
+                mandroid:RightText="广西师范大学"/>
 
             <com.example.graduationdesign.view.UserMessageView
                 android:id="@+id/userview_usermajor"
@@ -59,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 mandroid:LeftText="本科专业"
-                mandroid:RightText="通信工程" />
+                mandroid:RightText="通信工程"/>
 
             <com.example.graduationdesign.view.UserMessageView
                 android:id="@+id/userview_aimschool"
@@ -67,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 mandroid:LeftText="考研院校"
-                mandroid:RightText="海南大学" />
+                mandroid:RightText="海南大学"/>
 
             <com.example.graduationdesign.view.UserMessageView
                 android:id="@+id/userview_aimmajor"
@@ -75,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 mandroid:LeftText="考研专业"
-                mandroid:RightText="生物科学" />
+                mandroid:RightText="生物科学"/>
 
             <com.example.graduationdesign.view.UserMessageView
                 android:id="@+id/userview_examtime"
@@ -83,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 mandroid:LeftText="考研时间"
-                mandroid:RightText="2016-10" />
+                mandroid:RightText="2016-10"/>
 
             <com.example.graduationdesign.view.UserMessageView
                 android:id="@+id/userview_password"
@@ -91,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 mandroid:LeftText="修改密码"
-                mandroid:RightTextVisible="gone" />
+                mandroid:RightTextVisible="gone"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

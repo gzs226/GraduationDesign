@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
 
-    <include layout="@layout/view_header" />
+    <include layout="@layout/view_header"/>
 
     <com.example.graduationdesign.view.SearchEditorView
         android:id="@+id/search_post_editor"
         android:layout_width="match_parent"
-        android:layout_height="54dp" />
+        android:layout_height="54dp"/>
 
     <ListView
         android:id="@+id/listview_search_post"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#f1f0f0"
-        android:divider="@null" /><!--去掉分割线-->
+        android:background="@color/main_bg"
+        android:divider="@null"/><!--去掉分割线-->
 
 </LinearLayout>

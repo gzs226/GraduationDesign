@@ -3,7 +3,7 @@
     xmlns:mandroid="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f1f0f0"
+    android:background="@color/main_bg"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
@@ -20,7 +20,7 @@
         mandroid:isSelete="mTure"
         mandroid:itemId="singup"
         mandroid:itemText="报名"
-        mandroid:mtextColor="#BABABA" />
+        mandroid:mtextColor="@color/text_item" />
 
     <com.example.graduationdesign.view.GenderItemView
         android:id="@+id/sort_item_exam_experience"
@@ -30,7 +30,7 @@
         mandroid:imageSrc="@drawable/group_unselect"
         mandroid:itemId="exam"
         mandroid:itemText="考试经验"
-        mandroid:mtextColor="#BABABA" />
+        mandroid:mtextColor="@color/text_item_detail" />
 
     <com.example.graduationdesign.view.GenderItemView
         android:id="@+id/sort_item_review_experience"
@@ -40,7 +40,7 @@
         mandroid:imageSrc="@drawable/group_select"
         mandroid:itemId="review"
         mandroid:itemText="复习交流"
-        mandroid:mtextColor="#BABABA" />
+        mandroid:mtextColor="@color/text_item_detail" />
 
     <com.example.graduationdesign.view.GenderItemView
         android:id="@+id/sort_item_seekhelp"
@@ -50,7 +50,7 @@
         mandroid:imageSrc="@drawable/group_select"
         mandroid:itemId="help"
         mandroid:itemText="求助答疑"
-        mandroid:mtextColor="#BABABA" />
+        mandroid:mtextColor="@color/text_item_detail" />
 
     <View
         android:layout_width="match_parent"
