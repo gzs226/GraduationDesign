@@ -3,7 +3,7 @@
     android:id="@+id/lin_gender_item"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:background="@color/login_bg"
+    android:background="@color/main_bg"
     android:gravity="center"
     android:orientation="horizontal">
 

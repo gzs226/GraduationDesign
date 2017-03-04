@@ -222,7 +222,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:text="今日5"
-            android:textColor="@color/head_title_text"
+            android:textColor="@color/text_new_mes"
             android:textSize="12sp"
             android:visibility="gone" />
 

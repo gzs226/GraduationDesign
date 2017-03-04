@@ -11,36 +11,53 @@
         android:id="@+id/user_message_header"
         layout="@layout/view_header" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/main_line" />
+
     <com.example.graduationdesign.view.GenderItemView
         android:id="@+id/gender_item_man"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
         mandroid:imageSrc="@drawable/group_unselect"
         mandroid:itemId="man"
         mandroid:itemText="男"
         mandroid:mtextColor="@color/text_item_detail" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
+
     <com.example.graduationdesign.view.GenderItemView
         android:id="@+id/gender_item_woman"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="1dp"
         mandroid:imageSrc="@drawable/group_unselect"
         mandroid:itemId="woman"
         mandroid:itemText="女"
         mandroid:mtextColor="@color/text_item_detail" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
+
     <com.example.graduationdesign.view.GenderItemView
         android:id="@+id/gender_item_secrecy"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="1dp"
         mandroid:imageSrc="@drawable/group_select"
         mandroid:isSelete="mTure"
         mandroid:itemId="secrecy"
         mandroid:itemText="保密"
         mandroid:mtextColor="@color/text_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
 
     <View
         android:layout_width="match_parent"

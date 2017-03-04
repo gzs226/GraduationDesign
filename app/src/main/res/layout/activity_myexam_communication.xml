@@ -10,7 +10,8 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="10dp"
+        android:background="@color/main_line" />
 
     <LinearLayout
         android:id="@+id/lin_my_communication"
@@ -46,6 +47,11 @@
             android:src="@drawable/icon_indicator_right2" />
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
+
     <LinearLayout
         android:id="@+id/lin_communication_me"
         android:layout_width="match_parent"
@@ -53,7 +59,6 @@
         android:background="@drawable/my_circle_bg"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_marginTop="1dp"
         android:paddingLeft="10dp">
 
         <ImageView
@@ -80,4 +85,9 @@
             android:layout_marginRight="10dp"
             android:src="@drawable/icon_indicator_right2" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
 </LinearLayout>

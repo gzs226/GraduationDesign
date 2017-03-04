@@ -7,9 +7,11 @@
     <color name="head_title_line">#08083d</color>
     <color name="head_title_bg">#0a0a4e</color>
     <color name="head_title_text">#5e92ba</color>
+    <color name="head_frame">#6060a1</color>
     <color name="edit_hint_text">#7b7b7b</color>
-    <color name="edit_bg">#ffffff</color>
-    <color name="edit_frame_line">#fddd25</color>
+    <color name="edit_bg">#0d0d63</color>
+    <color name="edit_frame_line">#5e92ba</color>
+
     <color name="but_login_bg">#ff6C01</color>
     <color name="but_register_bg">#ffffff</color>
     <color name="text_find_password">#0d5ff7</color>
@@ -17,6 +19,7 @@
     <!--登录+注册-->
     <!--主界面-->
     <color name="main_bg">#08083d</color>
+    <color name="other_bg">#08083d</color>
     <color name="main_line">#0d0d63</color>
 
     <color name="menu_bg_normal">#0a0a4e</color>
@@ -34,6 +37,7 @@
     <color name="expand_list_line">#0d0d63</color>
 
     <color name="new_mes_bg">#f2600b</color>
+    <color name="new_mes_frame">#7272df</color>
     <color name="text_new_mes">#ffffff</color>
 
     <color name="text_item">#5e92ba</color>
@@ -74,8 +78,8 @@
     <!--个人信息修改界面-->
 
     <!--aPP评价界面-->
-    <color name="say_text_bg">#efecec</color>
-    <color name="say_text">#c69f15</color>
+    <color name="say_text_bg">#0a0a4e</color>
+    <color name="say_text">#5e92ba</color>
     <!--aPP评价界面-->
 
     <color name="text_comment">#25b7df</color>
@@ -104,5 +108,12 @@
     <color name="download_record_pressed">#236c0f</color>
 
     <color name="search_editer_bg">#0d0d63</color>
+
+    <color name="text_gender_unselect">#bababa</color>
+    <color name="text_gender_select">#5e92ba</color>
+
+    <color name="text_mes_unedit">#5e92ba</color>
+    <color name="text_mes_edit">#bababa</color>
+
 
 </resources>

@@ -5,8 +5,4 @@ package com.example.graduationdesign.utils;
  */
 
 public class MyColor {
-    public static final int UserTextEditor = 0xFF000000;
-    public static final int UserTextNarmal = 0xFFBABABA;
-    public static final int genderTextSelete = 0xFF000000;
-    public static final int genderTextNarmal = 0xFFBABABA;
 }

@@ -2,6 +2,7 @@ package com.example.graduationdesign.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -172,7 +173,7 @@ public class UserMessageActivity extends BaseActivity implements View.OnClickLis
     private void AmendedMessage() {
         if (userviewIcon.getViewEnabled()) {//可点击
             for (UserMessageView mUserMessageView : mUserMessageViewList) {
-                mUserMessageView.setTextColorBoth(MyColor.UserTextNarmal);
+                mUserMessageView.setTextColorBoth(ContextCompat.getColor(UserMessageActivity.this, R.color.text_mes_unedit));
                 mUserMessageView.setRightImageViewVisibility(View.GONE);
                 mUserMessageView.setViewIsEditor(false);
                 mUserMessageView.setViewEnabled(false);
@@ -181,11 +182,10 @@ public class UserMessageActivity extends BaseActivity implements View.OnClickLis
             buttonAmended.setText("修改");
         } else {//不可点击
             for (UserMessageView mUserMessageView : mUserMessageViewList) {
-                mUserMessageView.setTextColorBoth(MyColor.UserTextEditor);
+                mUserMessageView.setTextColorBoth(ContextCompat.getColor(UserMessageActivity.this, R.color.text_mes_edit));
                 mUserMessageView.setRightImageViewVisibility(View.VISIBLE);
                 mUserMessageView.setViewEnabled(true);
             }
-
 
             buttonAmended.setText("保存");
         }

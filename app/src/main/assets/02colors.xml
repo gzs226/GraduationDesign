@@ -7,6 +7,7 @@
     <color name="head_title_line">#e4ca37</color>
     <color name="head_title_bg">#fddd25</color>
     <color name="head_title_text">#ffffff</color>
+    <color name="head_frame">#fdf1b9</color>
     <color name="edit_hint_text">#7b7b7b</color>
     <color name="edit_bg">#ffffff</color>
     <color name="edit_frame_line">#fddd25</color>
@@ -17,6 +18,7 @@
     <!--登录+注册-->
     <!--主界面-->
     <color name="main_bg">#f2f2f2</color>
+    <color name="other_bg">#ffffff</color>
     <color name="main_line">#e4e4e4</color>
 
     <color name="menu_bg_normal">#ffffff</color>
@@ -34,6 +36,7 @@
     <color name="expand_list_line">#dadada</color>
 
     <color name="new_mes_bg">#f2600b</color>
+    <color name="new_mes_frame">#ffffff</color>
     <color name="text_new_mes">#ffffff</color>
 
     <color name="text_item">#3e3e3e</color>
@@ -105,4 +108,9 @@
 
     <color name="search_editer_bg">#ffffff</color>
 
+    <color name="text_gender_select">#000000</color>
+    <color name="text_gender_unselect">#bababa</color>
+
+    <color name="text_mes_unedit">#bababa</color>
+    <color name="text_mes_edit">#000000</color>
 </resources>

@@ -2,6 +2,7 @@ package com.example.graduationdesign.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.graduationdesign.R;
+import com.example.graduationdesign.activity.UserMessageActivity;
 import com.example.graduationdesign.utils.MyColor;
 
 
@@ -21,14 +23,15 @@ public class GenderItemView extends LinearLayout implements View.OnClickListener
     private LinearLayout mLinearLayout = null;
     private boolean IsSelete = false;
     private String mItemId = "0";
-
+private Context context;
     public GenderItemView(Context context) {
         this(context, null);
+        this.context = context;
     }
 
     public GenderItemView(final Context context, AttributeSet attrs) {
         super(context, attrs);
-
+        this.context = context;
         InitView(context);
         Init(context, attrs);
 
@@ -52,7 +55,7 @@ public class GenderItemView extends LinearLayout implements View.OnClickListener
         String itemid = typedArray.getString(R.styleable.attr_gender_item_itemId);
         String textString = typedArray.getString(R.styleable.attr_gender_item_itemText);
         int imageSrc = typedArray.getResourceId(R.styleable.attr_gender_item_imageSrc, R.drawable.cancel_iamge);
-        int textColor = typedArray.getColor(R.styleable.attr_gender_item_mtextColor, MyColor.UserTextNarmal);
+        int textColor = typedArray.getColor(R.styleable.attr_gender_item_mtextColor, ContextCompat.getColor(context, R.color.text_mes_unedit));
         int isSelete = typedArray.getInt(R.styleable.attr_gender_item_isSelete, 0);
         //防止内存泄漏
 
@@ -75,11 +78,11 @@ public class GenderItemView extends LinearLayout implements View.OnClickListener
     public void setIsSelete(boolean selete) {
         if (selete) {
             mImageView.setImageResource(R.drawable.group_select);
-            mTextView.setTextColor(MyColor.genderTextSelete);
+            mTextView.setTextColor(ContextCompat.getColor(context, R.color.text_gender_select));
             IsSelete = selete;
         } else {
             mImageView.setImageResource(R.drawable.group_unselect);
-            mTextView.setTextColor(MyColor.genderTextNarmal);
+            mTextView.setTextColor(ContextCompat.getColor(context, R.color.text_gender_unselect));
             IsSelete = selete;
         }
     }
@@ -99,12 +102,12 @@ public class GenderItemView extends LinearLayout implements View.OnClickListener
                 if (IsSelete()) {
                     setIsSelete(false);
                     mImageView.setImageResource(R.drawable.group_unselect);
-                    mTextView.setTextColor(MyColor.genderTextNarmal);
+                    mTextView.setTextColor(ContextCompat.getColor(context, R.color.text_gender_unselect));
                     mSeleteStates.SeleteStateChange(mItemId, false);
                 } else {
                     setIsSelete(true);
                     mImageView.setImageResource(R.drawable.group_select);
-                    mTextView.setTextColor(MyColor.genderTextSelete);
+                    mTextView.setTextColor(ContextCompat.getColor(context, R.color.text_gender_select));
                     mSeleteStates.SeleteStateChange(mItemId, true);
                 }
                 break;

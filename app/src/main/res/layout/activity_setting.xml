@@ -8,11 +8,15 @@
 
     <include layout="@layout/view_header" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/main_line" />
+
     <LinearLayout
         android:id="@+id/lin_function_introduction"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
         android:background="@drawable/my_circle_bg"
         android:gravity="center"
         android:orientation="horizontal">
@@ -42,11 +46,15 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
+
     <LinearLayout
         android:id="@+id/lin_app_evaluate"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="1dp"
         android:background="@drawable/my_circle_bg"
         android:gravity="center"
         android:orientation="horizontal">
@@ -76,11 +84,15 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
+
     <LinearLayout
         android:id="@+id/lin_feedback_message"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="1dp"
         android:background="@drawable/my_circle_bg"
         android:gravity="center"
         android:orientation="horizontal">
@@ -111,11 +123,15 @@
     </LinearLayout>
 
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/main_line" />
+
     <LinearLayout
         android:id="@+id/lin_app_update"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
         android:background="@drawable/my_circle_bg"
         android:gravity="center"
         android:orientation="horizontal">
@@ -145,10 +161,14 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="1dp"
         android:background="@drawable/my_circle_bg"
         android:gravity="center"
         android:orientation="horizontal">
@@ -179,11 +199,15 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/main_line" />
+
     <LinearLayout
         android:id="@+id/lin_update_answer"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
         android:background="@drawable/my_circle_bg"
         android:gravity="center"
         android:orientation="horizontal">
@@ -213,16 +237,24 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/main_line" />
+
     <TextView
         android:id="@+id/text_logout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
         android:background="@drawable/my_circle_bg"
         android:gravity="center"
         android:text="退出登录"
         android:textColor="@color/text_item"
         android:textSize="16sp" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
 
 </LinearLayout>
