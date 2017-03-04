@@ -59,6 +59,7 @@ public class WrongBankActivity extends BaseActivity implements CollectionBankLis
         setContentView(R.layout.activity_collection_bank);
         ButterKnife.bind(this);
 
+        headerCenterText.setText("错题");
         helper = new DatabaseHelper(WrongBankActivity.this);
         adapter = new WrongBankAdapter(this, ListResultdata);
         postList.setAdapter(adapter);

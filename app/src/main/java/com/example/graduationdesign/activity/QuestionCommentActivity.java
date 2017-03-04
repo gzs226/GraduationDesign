@@ -52,8 +52,6 @@ public class QuestionCommentActivity extends BaseActivity implements QuestionCom
     LinearLayout linHotComment;
     @BindView(R.id.lin_new_comment)
     LinearLayout linNewComment;
-    @BindView(R.id.iamge_comment_detail_collect)
-    ImageView iamgeCommentDetailCollect;
     private ListViewAdapter adapter;
     private int LVmodel = -1;
     private int page = 1;
@@ -74,7 +72,7 @@ public class QuestionCommentActivity extends BaseActivity implements QuestionCom
         lstvcommentq.setVisibility(View.VISIBLE);
         Intent intent = this.getIntent();
         mQuestionTransmit = (QuestionTransmit) intent.getSerializableExtra("questiondata");
-        adapter = new ListViewAdapter(lstvcommentq,this, listdata, mQuestionTransmit.getQuestion_id());
+        adapter = new ListViewAdapter(lstvcommentq, this, listdata, mQuestionTransmit.getQuestion_id());
         lstvcommentq.setAdapter(adapter);
         lstvcommentq.setOnRefreshListener(this);
         lstvcommentq.setOnLoadListener(this);
@@ -99,7 +97,7 @@ public class QuestionCommentActivity extends BaseActivity implements QuestionCom
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position < 6) {
-                    return ;
+                    return;
                 }
                 PostCommentData mPostCommentData = new PostCommentData();
                 mPostCommentData = listdata.get((position - 6));
@@ -203,14 +201,11 @@ public class QuestionCommentActivity extends BaseActivity implements QuestionCom
     }
 
 
-    @OnClick({R.id.text_comment_detail_comment, R.id.iamge_comment_detail_collect,
-              R.id.linear_back})
+    @OnClick({R.id.text_comment_detail_comment, R.id.linear_back})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.text_comment_detail_comment:
                 toCommetnQuestionActivity();
-                break;
-            case R.id.iamge_comment_detail_collect:
                 break;
             case R.id.linear_back:
                 finish();

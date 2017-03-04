@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <!-- 边框填充的颜色 -->
-    <solid android:color="#FFFFFF" />
+    <solid android:color="@color/search_editer_bg" />
 
     <!-- 设置进度条的四个角为弧形 -->
     <!-- android:radius 弧形的半径 -->

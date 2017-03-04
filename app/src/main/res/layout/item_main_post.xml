@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/login_bg"
+    android:background="@color/other_bg"
     android:orientation="vertical">
 
     <com.example.graduationdesign.view.SearchEditorView
@@ -32,7 +32,7 @@
             android:layout_marginTop="15dp"
             android:layout_toRightOf="@id/imageview_post_titleicon"
             android:text="报考交流"
-            android:textColor="#404040"
+            android:textColor="@color/text_item"
             android:textSize="16sp" />
 
         <TextView
@@ -44,7 +44,7 @@
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/imageview_post_titleicon"
             android:text="考研报考交流区"
-            android:textColor="#bfbfbf"
+            android:textColor="@color/text_item_detail"
             android:textSize="12sp" />
 
     </RelativeLayout>
@@ -91,5 +91,5 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="5dp"
-        android:background="#e9e9e9" />
+        android:background="@color/main_line" />
 </LinearLayout>

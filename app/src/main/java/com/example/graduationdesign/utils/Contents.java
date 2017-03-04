@@ -5,6 +5,14 @@ package com.example.graduationdesign.utils;
  */
 
 public class Contents {
+    public static final String DAY_NIGHT_STATE = "day_night_state";
+    public static final String DAY_NIGHT_MODEL = "day_night_model";
+    public static final int IS_DAY = 1;
+    public static final int IS_NIGHT = 0;
+
+    public static final String IS_FRIST = "is_frist";
+
+
     public static final String USER_IS_LOGIN = "userislogin";
 
     public static final String USER_ID = "userid";

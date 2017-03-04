@@ -4,45 +4,44 @@
     <color name="transparent">#00000000</color>
     <color name="login_bg">#ffffff</color>
     <!--登录+注册-->
-    <color name="head_title_line">#08083d</color>
-    <color name="head_title_bg">#0a0a4e</color>
-    <color name="head_title_text">#5e92ba</color>
-    <color name="head_frame">#6060a1</color>
+    <color name="head_title_line">#e4ca37</color>
+    <color name="head_title_bg">#fddd25</color>
+    <color name="head_title_text">#ffffff</color>
+    <color name="head_frame">#fdf1b9</color>
     <color name="edit_hint_text">#7b7b7b</color>
-    <color name="edit_bg">#0d0d63</color>
-    <color name="edit_frame_line">#5e92ba</color>
-
+    <color name="edit_bg">#ffffff</color>
+    <color name="edit_frame_line">#fddd25</color>
     <color name="but_login_bg">#ff6C01</color>
     <color name="but_register_bg">#ffffff</color>
     <color name="text_find_password">#0d5ff7</color>
     <color name="text_back_login">#0d5ff7</color>
     <!--登录+注册-->
     <!--主界面-->
-    <color name="main_bg">#08083d</color>
-    <color name="other_bg">#08083d</color>
-    <color name="main_line">#0d0d63</color>
+    <color name="main_bg">#f2f2f2</color>
+    <color name="other_bg">#ffffff</color>
+    <color name="main_line">#e4e4e4</color>
 
-    <color name="menu_bg_normal">#0a0a4e</color>
-    <color name="menu_bg_press">#08083d</color>
+    <color name="menu_bg_normal">#ffffff</color>
+    <color name="menu_bg_press">#ededed</color>
 
-    <color name="menu_text_normal">#5e92ba</color>
-    <color name="menu_text_press">#5e92ba</color>
+    <color name="menu_text_normal">#7b7b7b</color>
+    <color name="menu_text_press">#df5555</color>
 
-    <color name="item_bg_normal">#08083d</color>
-    <color name="item_bg_press">#0d0d63</color>
+    <color name="item_bg_normal">#ffffff</color>
+    <color name="item_bg_press">#ffe59d</color>
 
     <color name="chapter_bg_normal">#f4f4f4</color>
     <color name="chapter_bg_press">#ffe59d</color>
     <color name="text_chapter">#808080</color>
-    <color name="expand_list_line">#0d0d63</color>
+    <color name="expand_list_line">#dadada</color>
 
     <color name="new_mes_bg">#f2600b</color>
-    <color name="new_mes_frame">#7272df</color>
+    <color name="new_mes_frame">#ffffff</color>
     <color name="text_new_mes">#ffffff</color>
 
-    <color name="text_item">#5e92ba</color>
+    <color name="text_item">#3e3e3e</color>
     <color name="text_note">#3e3e3e</color>
-    <color name="text_item_detail">#0e4d7c</color>
+    <color name="text_item_detail">#767676</color>
     <!--主界面-->
     <!--选题界面-->
     <color name="text_chapter_detail">#e49a22</color>
@@ -56,8 +55,8 @@
     <color name="text_wrong_option">#ff0000</color>
     <color name="text_right_option">#2bd52b</color>
 
-    <color name="analysis_bg">#0a0a4e</color>
-    <color name="text_analysis">#5e92ba</color>
+    <color name="analysis_bg">#f9f4e9</color>
+    <color name="text_analysis">#333232</color>
     <color name="but_handin_bg">#ffffff</color>
     <color name="but_handin_frame">#fddd25</color>
     <!--做题界面-->
@@ -79,15 +78,15 @@
     <!--个人信息修改界面-->
 
     <!--aPP评价界面-->
-    <color name="say_text_bg">#0a0a4e</color>
-    <color name="say_text">#5e92ba</color>
+    <color name="say_text_bg">#efecec</color>
+    <color name="say_text">#c69f15</color>
     <!--aPP评价界面-->
 
     <color name="text_comment">#25b7df</color>
     <color name="text_comment_ct_bg">#f4f4f4</color>
 
-    <color name="subject_child_bg_normal">#06062d</color>
-    <color name="subject_child_bg_pressed">#0d0d63</color>
+    <color name="subject_child_bg_normal">#f4f4f4</color>
+    <color name="subject_child_bg_pressed">#ffe59d</color>
 
     <color name="system_message_bg_normal">#fffefe</color>
     <color name="system_message_bg_pressed">#e6e5e4</color>
@@ -108,17 +107,18 @@
     <color name="download_record_normal">#3dca16</color>
     <color name="download_record_pressed">#236c0f</color>
 
-    <color name="search_editer_bg">#0d0d63</color>
+    <color name="search_editer_bg">#ffffff</color>
 
+    <color name="text_gender_select">#000000</color>
     <color name="text_gender_unselect">#bababa</color>
-    <color name="text_gender_select">#5e92ba</color>
 
-    <color name="text_mes_unedit">#5e92ba</color>
-    <color name="text_mes_edit">#bababa</color>
+    <color name="text_mes_unedit">#bababa</color>
+    <color name="text_mes_edit">#000000</color>
 
-    <color name="option_bg">#0a0a4e</color>
+    <color name="option_bg">#ffffff</color>
 
-    <color name="question_option_lin_bg_normal">#0a0a4e</color>
+    <color name="question_option_lin_bg_normal">#ffffff</color>
     <color name="question_option_lin_bg_pressed">#dcd7ba</color>
 
+    <color name="comment_buttom_bg">#f4f4f4</color>
 </resources>

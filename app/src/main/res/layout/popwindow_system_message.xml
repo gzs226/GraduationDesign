@@ -16,7 +16,7 @@
         android:layout_height="0dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
-        android:background="@color/login_bg"
+        android:background="@color/other_bg"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -53,6 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:textColorHint="@color/text_item_detail"
                 android:hint="IntlPhoneInput - 一个支持国际化的电话号码输入的自定义控件。
                 AndroidUI4Web - AndroidUI4Web是一个高性能的WebApp框架, 在移动浏览器上有与原生App一致的体验。
                 SmoothCheckBox - SmoothCheckBox带有切换动画的CheckBox。

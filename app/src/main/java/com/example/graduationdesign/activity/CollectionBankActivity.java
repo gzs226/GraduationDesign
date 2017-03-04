@@ -64,7 +64,7 @@ public class CollectionBankActivity extends BaseActivity implements CollectionBa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection_bank);
         ButterKnife.bind(this);
-
+        headerCenterText.setText("收藏");
         helper = new DatabaseHelper(CollectionBankActivity.this);
         adapter = new CollectionBankAdapter(this, ListResultdata);
         postList.setAdapter(adapter);
@@ -127,7 +127,7 @@ public class CollectionBankActivity extends BaseActivity implements CollectionBa
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         //根据QuestionId获取Question数据
 
-        ToQuestionDetail(position-1,ListResultdata.get(position-1).getQuestion_id());
+        ToQuestionDetail(position - 1, ListResultdata.get(position - 1).getQuestion_id());
     }
 
     @OnClick({R.id.linear_back})
@@ -139,11 +139,11 @@ public class CollectionBankActivity extends BaseActivity implements CollectionBa
         }
     }
 
-    private void ToQuestionDetail(int position,int QuestionId) {
+    private void ToQuestionDetail(int position, int QuestionId) {
         mSelectQuestionDatas = new SelectQuestionDatas(helper.getReadableDatabase());
         Question_bank mQ = new Question_bank();
         mQ = mSelectQuestionDatas.findDataByQuestionId(QuestionId);
-        
+
         QuestionTransmit mQuestionTransmit = new QuestionTransmit();
         mQuestionTransmit.setQuestion_id(mQ.getQuestion_id());
         mQuestionTransmit.setSubject(mQ.getSubject());

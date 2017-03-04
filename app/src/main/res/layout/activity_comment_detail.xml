@@ -8,7 +8,8 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/other_bg">
 
 
         <LinearLayout
@@ -21,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:divider="#ededed"
+                android:divider="@color/main_line"
                 android:dividerHeight="1px"
                 android:visibility="gone"/>
 
@@ -30,14 +31,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:divider="#ededed"
+                android:divider="@color/main_line"
                 android:dividerHeight="1px"
                 android:visibility="gone"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#f4f4f4"
+                android:background="@color/comment_buttom_bg"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingBottom="10dp"
@@ -54,16 +55,7 @@
                     android:gravity="center_vertical"
                     android:paddingLeft="15dp"
                     android:text="写评论..."
-                    android:textColor="#CDCDCD"/>
-
-                <ImageView
-                    android:id="@+id/iamge_comment_detail_collect"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:padding="5dp"
-                    android:src="@drawable/ic_topic_detail_no_collect"
-                    />
+                    android:textColor="@color/text_item"/>
 
             </LinearLayout>
 
@@ -73,7 +65,7 @@
             android:id="@+id/lin_hot_comment"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:background="#FFFFFF"
+            android:background="@color/main_line"
             android:visibility="gone">
 
             <TextView
@@ -82,7 +74,7 @@
                 android:layout_marginLeft="20dp"
                 android:gravity="center_vertical"
                 android:text="热门评论"
-                android:textColor="#151515"
+                android:textColor="@color/text_item"
                 android:textSize="14sp"/>
         </LinearLayout>
 
@@ -91,7 +83,7 @@
             android:id="@+id/lin_new_comment"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:background="#FFFFFF"
+            android:background="@color/main_line"
             android:orientation="horizontal"
             android:visibility="gone">
 
@@ -101,7 +93,7 @@
                 android:layout_marginLeft="20dp"
                 android:gravity="center_vertical"
                 android:text="最新评论"
-                android:textColor="#151515"
+                android:textColor="@color/text_item"
                 android:textSize="14sp"/>
 
             <View
@@ -110,7 +102,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
-                android:background="#c7c7c7"/>
+                android:background="@color/main_line"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -118,7 +110,7 @@
                 android:layout_marginLeft="5dp"
                 android:gravity="center_vertical"
                 android:text="只看楼主"
-                android:textColor="#c1bebe"
+                android:textColor="@color/text_item_detail"
                 android:textSize="14sp"/>
         </LinearLayout>
 

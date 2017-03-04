@@ -3,7 +3,7 @@
     android:id="@+id/merge_examtime_item"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:background="@color/login_bg">
+    android:background="@color/other_bg">
 
 
     <TextView

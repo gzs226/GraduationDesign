@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.example.graduationdesign.R;
 import com.example.graduationdesign.activity.PostDetailActivity;
+import com.example.graduationdesign.utils.ConfigUserMessagePrefs;
 import com.example.graduationdesign.utils.Contents;
 
 import butterknife.BindView;
@@ -44,6 +45,8 @@ public class MyCommunityFragment extends Fragment {
 
     private View communityView;
 
+    private int NEW_MODEL_STATE;
+
     public MyCommunityFragment() {
 
     }
@@ -58,10 +61,16 @@ public class MyCommunityFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the body_fragment_mymain for this fragment
+        if (NEW_MODEL_STATE !=
+            ConfigUserMessagePrefs.getValue(getActivity(), Contents.DAY_NIGHT_STATE, -1)) {
+            NEW_MODEL_STATE = ConfigUserMessagePrefs.getValue(getActivity(), Contents.DAY_NIGHT_STATE, -1);
+            communityView = inflater.inflate(R.layout.fragment_my_community, container, false);
+        }
+
         if (communityView == null) {
+            NEW_MODEL_STATE = ConfigUserMessagePrefs.getValue(getActivity(), Contents.DAY_NIGHT_STATE, -1);
             communityView = inflater.inflate(R.layout.fragment_my_community, container, false);
         }
         ButterKnife.bind(this, communityView);
@@ -75,25 +84,26 @@ public class MyCommunityFragment extends Fragment {
         buttonAmended.setVisibility(View.INVISIBLE);
     }
 
-    @OnClick({R.id.rel_exam_communication, R.id.rel_signup_exam, R.id.rel_free_communication, R.id.rel_guess_question})
+    @OnClick({R.id.rel_exam_communication, R.id.rel_signup_exam, R.id.rel_free_communication,
+              R.id.rel_guess_question})
     public void onClick(View view) {
         Intent intent = new Intent();
         switch (view.getId()) {
             case R.id.rel_exam_communication:
                 intent.setClass(getContext(), PostDetailActivity.class);
-                intent.putExtra(Contents.CIRCLE_MODEL,Contents.CIRCLE_EXAM_COMMUNICATION);
+                intent.putExtra(Contents.CIRCLE_MODEL, Contents.CIRCLE_EXAM_COMMUNICATION);
                 break;
             case R.id.rel_signup_exam:
                 intent.setClass(getContext(), PostDetailActivity.class);
-                intent.putExtra(Contents.CIRCLE_MODEL,Contents.CIRCLE_SINGUP_EXAM);
+                intent.putExtra(Contents.CIRCLE_MODEL, Contents.CIRCLE_SINGUP_EXAM);
                 break;
             case R.id.rel_free_communication:
                 intent.setClass(getContext(), PostDetailActivity.class);
-                intent.putExtra(Contents.CIRCLE_MODEL,Contents.CIRCLE_FREE_COMMUNICATION);
+                intent.putExtra(Contents.CIRCLE_MODEL, Contents.CIRCLE_FREE_COMMUNICATION);
                 break;
             case R.id.rel_guess_question:
                 intent.setClass(getContext(), PostDetailActivity.class);
-                intent.putExtra(Contents.CIRCLE_MODEL,Contents.CIRCLE_GESS_QUESTION);
+                intent.putExtra(Contents.CIRCLE_MODEL, Contents.CIRCLE_GESS_QUESTION);
                 break;
         }
         getActivity().startActivity(intent);

@@ -7,9 +7,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.weblibrary.URL;
-import com.example.weblibrary.app.MyApplication;
+import com.example.weblibrary.app.MyWebApplication;
 import com.example.weblibrary.model.PostCommentData;
-import com.example.weblibrary.model.Postresuldata;
 
 /**
  * Created by gg on 2016/11/5.
@@ -41,7 +40,7 @@ public class CommentWriteNew {
             }
         });
         request.setTag("writepost");
-        MyApplication.getHttpQueue().add(request);
+        MyWebApplication.getHttpQueue().add(request);
     }
     /**
      * 用户登录方法
@@ -68,7 +67,7 @@ public class CommentWriteNew {
             }
         });
         request.setTag("writepost");
-        MyApplication.getHttpQueue().add(request);
+        MyWebApplication.getHttpQueue().add(request);
     }
 
     /**

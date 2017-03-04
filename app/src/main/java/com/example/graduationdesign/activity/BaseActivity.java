@@ -10,6 +10,8 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.example.graduationdesign.R;
+import com.example.graduationdesign.utils.ConfigUserMessagePrefs;
+import com.example.graduationdesign.utils.Contents;
 import com.example.graduationdesign.utils.SystemBarTintManager;
 
 
@@ -20,6 +22,14 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //  setContentView(R.body_fragment_mymain.activity_base);
+        if (ConfigUserMessagePrefs.getValue(this, Contents.DAY_NIGHT_STATE, Contents.IS_DAY) ==
+            Contents.IS_DAY) {
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        } else if (
+                ConfigUserMessagePrefs.getValue(this, Contents.DAY_NIGHT_STATE, Contents.IS_DAY) ==
+                Contents.IS_NIGHT) {
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        }
         IfHintActionBar(true);
         setTopTitleColor(R.color.head_title_bg);
     }

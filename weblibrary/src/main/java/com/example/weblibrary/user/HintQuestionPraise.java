@@ -7,8 +7,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.weblibrary.URL;
-import com.example.weblibrary.app.MyApplication;
-import com.example.weblibrary.model.Postresuldata;
+import com.example.weblibrary.app.MyWebApplication;
 
 /**
  * Created by gg on 2016/11/5.
@@ -40,7 +39,7 @@ public class HintQuestionPraise {
             }
         });
         request.setTag("questionprase");
-        MyApplication.getHttpQueue().add(request);
+        MyWebApplication.getHttpQueue().add(request);
     }
 
     /**

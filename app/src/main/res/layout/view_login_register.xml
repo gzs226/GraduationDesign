@@ -11,6 +11,8 @@
         android:background="@drawable/login_editor_bg"
         android:gravity="center_vertical"
         android:hint="username"
+        android:textColorHint="@color/text_item_detail"
+        android:textColor="@color/text_item_detail"
         android:maxLines="1"
         android:paddingLeft="38dp"
         android:paddingRight="30dp"

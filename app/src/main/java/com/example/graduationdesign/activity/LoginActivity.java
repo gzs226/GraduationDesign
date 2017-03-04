@@ -88,22 +88,22 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button_login_login:
-                //      Login();
-                Intent intent = new Intent();
-                intent.setClass(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+                    Login();
+//                Intent intent = new Intent();
+//                intent.setClass(LoginActivity.this, MainActivity.class);
+//                startActivity(intent);
                 break;
             case R.id.button_login_register:
                 toRegister();
                 break;
             case R.id.text_find_password:
                 //testData();
-                String test = new PackQuestionData(LoginActivity.this).CollectionDataToString();
-                Log.e(TAG, "onClick: " + test);
-                test = new PackQuestionData(LoginActivity.this).QuestionDataToString();
-                Log.e(TAG, "onClick: " + test);
-                test = new PackQuestionData(LoginActivity.this).NoteDataToString();
-                Log.e(TAG, "onClick: " + test);
+//                String test = new PackQuestionData(LoginActivity.this).CollectionDataToString();
+//                Log.e(TAG, "onClick: " + test);
+//                test = new PackQuestionData(LoginActivity.this).QuestionDataToString();
+//                Log.e(TAG, "onClick: " + test);
+//                test = new PackQuestionData(LoginActivity.this).NoteDataToString();
+//                Log.e(TAG, "onClick: " + test);
                 break;
         }
     }

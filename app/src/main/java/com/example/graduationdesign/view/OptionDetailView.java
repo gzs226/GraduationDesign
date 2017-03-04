@@ -140,37 +140,37 @@ public class OptionDetailView extends LinearLayout implements View.OnClickListen
         recoveryView();
         switch (userAnswer) {
             case 0:
-                textviewOptionA.setTextColor(ContextCompat.getColor(context,R.color.option_anwser));
+                textviewOptionA.setTextColor(ContextCompat.getColor(context,R.color.option_err));
                 imageviewOptionA.setImageResource(R.drawable.icon_options_select_error);
                 break;
             case 1:
-                textviewOptionB.setTextColor(ContextCompat.getColor(context,R.color.option_anwser));
+                textviewOptionB.setTextColor(ContextCompat.getColor(context,R.color.option_err));
                 imageviewOptionB.setImageResource(R.drawable.icon_options_select_error);
                 break;
             case 2:
-                textviewOptionC.setTextColor(ContextCompat.getColor(context,R.color.option_anwser));
+                textviewOptionC.setTextColor(ContextCompat.getColor(context,R.color.option_err));
                 imageviewOptionC.setImageResource(R.drawable.icon_options_select_error);
                 break;
             case 3:
-                textviewOptionD.setTextColor(ContextCompat.getColor(context,R.color.option_anwser));
+                textviewOptionD.setTextColor(ContextCompat.getColor(context,R.color.option_err));
                 imageviewOptionD.setImageResource(R.drawable.icon_options_select_error);
                 break;
         }
         switch (answer) {
             case 0:
-                textviewOptionA.setTextColor(ContextCompat.getColor(context,R.color.option_err));
+                textviewOptionA.setTextColor(ContextCompat.getColor(context,R.color.option_anwser));
                 imageviewOptionA.setImageResource(R.drawable.icon_options_select_ok);
                 break;
             case 1:
-                textviewOptionB.setTextColor(ContextCompat.getColor(context,R.color.option_err));
+                textviewOptionB.setTextColor(ContextCompat.getColor(context,R.color.option_anwser));
                 imageviewOptionB.setImageResource(R.drawable.icon_options_select_ok);
                 break;
             case 2:
-                textviewOptionC.setTextColor(ContextCompat.getColor(context,R.color.option_err));
+                textviewOptionC.setTextColor(ContextCompat.getColor(context,R.color.option_anwser));
                 imageviewOptionC.setImageResource(R.drawable.icon_options_select_ok);
                 break;
             case 3:
-                textviewOptionD.setTextColor(ContextCompat.getColor(context,R.color.option_err));
+                textviewOptionD.setTextColor(ContextCompat.getColor(context,R.color.option_anwser));
                 imageviewOptionD.setImageResource(R.drawable.icon_options_select_ok);
                 break;
         }

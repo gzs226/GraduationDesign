@@ -55,7 +55,7 @@ public class CommentMainPostActivity extends BaseActivity {
         textReplyPostcomment.setText("回复" + mPostCommentTransmit.getFrom_uname());
         textWriteCommentQuestion.setVisibility(View.GONE);
         mWritePostComment = new PostCommentData();
-        UserId = Integer.valueOf(ConfigUserMessagePrefs.getValue(CommentMainPostActivity.this, Contents.USER_ID, ""));
+        UserId = Integer.valueOf(ConfigUserMessagePrefs.getValue(CommentMainPostActivity.this, Contents.USER_ID, "1"));
         UserName = ConfigUserMessagePrefs.getValue(CommentMainPostActivity.this, Contents.USER_NAME, "");
     }
 

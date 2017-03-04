@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/question_number_bg">
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/main_line">
 
     <TextView
         android:id="@+id/id_num"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:gravity="center"
-        android:textColor="@color/text_item"
-        android:text="1" />
+        android:text="1"
+        android:textColor="@color/text_item"/>
 </FrameLayout>

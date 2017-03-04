@@ -60,6 +60,7 @@ public class MyMainFragment extends Fragment {
     RelativeLayout relMyInformation;
     private View myMainView;
     private ImageLoaderByAsyncTask mImageLoaderByAsyncTask;
+    private int NEW_MODEL_STATE;
 
     public MyMainFragment() {
 
@@ -77,7 +78,13 @@ public class MyMainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the body_fragment_mymain for this fragment
+        if (NEW_MODEL_STATE !=
+            ConfigUserMessagePrefs.getValue(getActivity(), Contents.DAY_NIGHT_STATE, -1)) {
+            NEW_MODEL_STATE = ConfigUserMessagePrefs.getValue(getActivity(), Contents.DAY_NIGHT_STATE, -1);
+            myMainView = inflater.inflate(R.layout.fragment_my_main, container, false);
+        }
         if (myMainView == null) {
+            NEW_MODEL_STATE = ConfigUserMessagePrefs.getValue(getActivity(), Contents.DAY_NIGHT_STATE, -1);
             myMainView = inflater.inflate(R.layout.fragment_my_main, container, false);
         }
         ButterKnife.bind(this, myMainView);
@@ -92,7 +99,7 @@ public class MyMainFragment extends Fragment {
 
     private void InitView() {
         String muserid = ConfigUserMessagePrefs.getValue(getActivity(), Contents.USER_ID, "");
-        String url = URL.downloadimage + "userid="+muserid;
+        String url = URL.downloadimage + "userid=" + muserid;
         mImageLoaderByAsyncTask = new ImageLoaderByAsyncTask(imageviewPostUsericon);
         mImageLoaderByAsyncTask.loadImages(url);
         mImageLoaderByAsyncTask.showImageByAsyncTask(url);

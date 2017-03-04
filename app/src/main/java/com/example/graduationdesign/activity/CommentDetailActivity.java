@@ -45,8 +45,6 @@ public class CommentDetailActivity extends BaseActivity implements CommentDetail
     LinearLayout linHotComment;
     @BindView(R.id.lin_new_comment)
     LinearLayout linNewComment;
-    @BindView(R.id.iamge_comment_detail_collect)
-    ImageView iamgeCommentDetailCollect;
     private ListViewAdapter adapter;
     private int LVmodel = -1;
     private int page = 1;
@@ -62,7 +60,7 @@ public class CommentDetailActivity extends BaseActivity implements CommentDetail
         lstvcommentc.setVisibility(View.VISIBLE);
         Intent intent = this.getIntent();
         mPostTransmit = (PostTransmit) intent.getSerializableExtra("questiondata");
-        adapter = new ListViewAdapter(lstvcommentc,this, listdata, mPostTransmit.getUserid());
+        adapter = new ListViewAdapter(lstvcommentc, this, listdata, mPostTransmit.getUserid());
         lstvcommentc.setAdapter(adapter);
         lstvcommentc.setOnRefreshListener(this);
         lstvcommentc.setOnLoadListener(this);
@@ -191,14 +189,11 @@ public class CommentDetailActivity extends BaseActivity implements CommentDetail
     }
 
 
-    @OnClick({R.id.text_comment_detail_comment, R.id.iamge_comment_detail_collect,
-              R.id.linear_back})
+    @OnClick({R.id.text_comment_detail_comment, R.id.linear_back})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.text_comment_detail_comment:
                 WritePostHome();
-                break;
-            case R.id.iamge_comment_detail_collect:
                 break;
             case R.id.linear_back:
                 finish();

@@ -62,6 +62,7 @@ public class NoteBankActivity extends BaseActivity implements CollectionBankList
         setContentView(R.layout.activity_collection_bank);
         ButterKnife.bind(this);
 
+        headerCenterText.setText("笔记");
         helper = new DatabaseHelper(NoteBankActivity.this);
         adapter = new NoteBankAdapter(this, ListResultdata);
         postList.setAdapter(adapter);

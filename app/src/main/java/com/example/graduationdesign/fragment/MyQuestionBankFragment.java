@@ -19,6 +19,8 @@ import com.example.graduationdesign.activity.WrongBankActivity;
 import com.example.graduationdesign.adapter.SubjectAdapter;
 import com.example.graduationdesign.tool.Model.SubjectSort;
 import com.example.graduationdesign.tool.Model.Chapter;
+import com.example.graduationdesign.utils.ConfigUserMessagePrefs;
+import com.example.graduationdesign.utils.Contents;
 import com.example.graduationdesign.view.SearchEditorView;
 
 import java.util.ArrayList;
@@ -53,6 +55,7 @@ public class MyQuestionBankFragment extends Fragment implements ExpandableListVi
     private ArrayList<List<Chapter>> childList;
     private SubjectAdapter adapter;
     private String searchString = "";
+    private int NEW_MODEL_STATE;
 
     public MyQuestionBankFragment() {
 
@@ -70,7 +73,12 @@ public class MyQuestionBankFragment extends Fragment implements ExpandableListVi
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the body_fragment_mymain for this fragment
-        if (questionView == null) {
+        if (NEW_MODEL_STATE !=
+            ConfigUserMessagePrefs.getValue(getActivity(), Contents.DAY_NIGHT_STATE, -1)) {
+            NEW_MODEL_STATE = ConfigUserMessagePrefs.getValue(getActivity(), Contents.DAY_NIGHT_STATE, -1);
+            questionView = inflater.inflate(R.layout.fragment_question_bank, container, false);
+        }
+        if (questionView == null) { NEW_MODEL_STATE = ConfigUserMessagePrefs.getValue(getActivity(), Contents.DAY_NIGHT_STATE, -1);
             questionView = inflater.inflate(R.layout.fragment_question_bank, container, false);
         }
         ButterKnife.bind(this, questionView);

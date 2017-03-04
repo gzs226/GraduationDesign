@@ -7,9 +7,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.weblibrary.URL;
-import com.example.weblibrary.app.MyApplication;
+import com.example.weblibrary.app.MyWebApplication;
 import com.example.weblibrary.model.LoginResultData;
-import com.example.weblibrary.model.resultVersionData;
 import com.google.gson.Gson;
 
 /**
@@ -48,7 +47,7 @@ public class UserLogin {
             }
         });
         request.setTag("login");
-        MyApplication.getHttpQueue().add(request);
+        MyWebApplication.getHttpQueue().add(request);
     }
 
     /**

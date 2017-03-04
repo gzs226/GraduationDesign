@@ -119,7 +119,7 @@ public class QuestionDetailedActivity extends BaseActivity {
         collectviewCollection.setQuestionId(mQuestionTransmit.getQuestion_id(), helper.getReadableDatabase());
         noteviewNote.setQuestionId(mQuestionTransmit.getQuestion_id(), helper.getReadableDatabase());
 
-        setViewModel(0);
+        setViewModel(mQuestionTransmit.getUser_do());
         buttonAmended.setVisibility(View.INVISIBLE);
         headerCenterText.setText("" + mQuestionTransmit.getSubject());
         questionDetailChapter.setText("" + mQuestionTransmit.getChapter());
@@ -156,8 +156,7 @@ public class QuestionDetailedActivity extends BaseActivity {
 
     private void UserDone() {
         questionDetailHandinAnswer.setVisibility(View.GONE);
-        int useranswer = questionDetailOption.getChoiceOption();
-        questionDetailOption.AnswerModel(mQuestion_bank.getAnswer(), useranswer);
+        questionDetailOption.AnswerModel(mQuestionTransmit.getAnswer(), mQuestionTransmit.getUser_answer());
         questionDetailLinAnswer.setVisibility(View.VISIBLE);
         questionDetailLinAnalysis.setVisibility(View.VISIBLE);
         questionDetailOption.setAllLinEnabled(false);
@@ -191,12 +190,12 @@ public class QuestionDetailedActivity extends BaseActivity {
             return;
         }
         mTableOperate = new TableOperate(helper.getWritableDatabase());
-        mTableOperate.UpdateUserDo(mQuestion_bank.getQuestion_id(), USER_DONE);
-        mTableOperate.UpdateUserAnswer(mQuestion_bank.getQuestion_id(), USER_ANSWER);
+        mTableOperate.UpdateUserDo(mQuestionTransmit.getQuestion_id(), USER_DONE);
+        mTableOperate.UpdateUserAnswer(mQuestionTransmit.getQuestion_id(), USER_ANSWER);
         mTableOperate.closeDB();
-
+        mQuestionTransmit.setUser_answer(USER_ANSWER);
         mSelectQuestionDatas = new SelectQuestionDatas(helper.getReadableDatabase());
-        mQuestion_bank = mSelectQuestionDatas.findDataByQuestionId(QuestionId);
+        mQuestion_bank = mSelectQuestionDatas.findDataByQuestionId(mQuestionTransmit.getQuestion_id());
         setViewModel(USER_DONE);
     }
 
