@@ -188,7 +188,7 @@ public class PickerDataView extends View {
         mPaint.setStyle(Style.FILL);
         mPaint.setTextAlign(Align.CENTER);
         //noinspection deprecation
-        mPaint.setColor(getResources().getColor(R.color.colorPrimary));
+        mPaint.setColor(getResources().getColor(R.color.but_dialog_frame));
         //第二个paint
         nPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         nPaint.setStyle(Style.FILL);

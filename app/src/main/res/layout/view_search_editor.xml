@@ -25,6 +25,8 @@
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
             android:singleLine="true"
+            android:textColor="@color/text_item_detail"
+            android:textColorHint="@color/text_item_detail"
             android:textCursorDrawable="@drawable/color_cursor"
             android:textSize="12sp" />
 
@@ -41,10 +43,10 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="end"
-            android:visibility="gone"
             android:layout_marginRight="15dp"
             android:layout_marginTop="7dp"
-            android:src="@drawable/edit_delete_icon" />
+            android:src="@drawable/edit_delete_icon"
+            android:visibility="gone" />
     </FrameLayout>
 
     <Button

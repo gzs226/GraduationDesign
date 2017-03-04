@@ -4,9 +4,9 @@
     <color name="transparent">#00000000</color>
     <color name="login_bg">#ffffff</color>
     <!--登录+注册-->
-    <color name="head_title_line">#e4ca37</color>
-    <color name="head_title_bg">#fddd25</color>
-    <color name="head_title_text">#ffffff</color>
+    <color name="head_title_line">#08083d</color>
+    <color name="head_title_bg">#0a0a4e</color>
+    <color name="head_title_text">#5e92ba</color>
     <color name="edit_hint_text">#7b7b7b</color>
     <color name="edit_bg">#ffffff</color>
     <color name="edit_frame_line">#fddd25</color>
@@ -16,29 +16,29 @@
     <color name="text_back_login">#0d5ff7</color>
     <!--登录+注册-->
     <!--主界面-->
-    <color name="main_bg">#f2f2f2</color>
-    <color name="main_line">#e4e4e4</color>
+    <color name="main_bg">#08083d</color>
+    <color name="main_line">#0d0d63</color>
 
-    <color name="menu_bg_normal">#ffffff</color>
-    <color name="menu_bg_press">#ededed</color>
+    <color name="menu_bg_normal">#0a0a4e</color>
+    <color name="menu_bg_press">#08083d</color>
 
-    <color name="menu_text_normal">#7b7b7b</color>
-    <color name="menu_text_press">#df5555</color>
+    <color name="menu_text_normal">#5e92ba</color>
+    <color name="menu_text_press">#5e92ba</color>
 
-    <color name="item_bg_normal">#ffffff</color>
-    <color name="item_bg_press">#ffe59d</color>
+    <color name="item_bg_normal">#08083d</color>
+    <color name="item_bg_press">#0d0d63</color>
 
     <color name="chapter_bg_normal">#f4f4f4</color>
     <color name="chapter_bg_press">#ffe59d</color>
     <color name="text_chapter">#808080</color>
-    <color name="expand_list_line">#dadada</color>
+    <color name="expand_list_line">#0d0d63</color>
 
     <color name="new_mes_bg">#f2600b</color>
     <color name="text_new_mes">#ffffff</color>
 
-    <color name="text_item">#3e3e3e</color>
+    <color name="text_item">#5e92ba</color>
     <color name="text_note">#3e3e3e</color>
-    <color name="text_item_detail">#767676</color>
+    <color name="text_item_detail">#0e4d7c</color>
     <!--主界面-->
     <!--选题界面-->
     <color name="text_chapter_detail">#e49a22</color>
@@ -78,35 +78,31 @@
     <color name="say_text">#c69f15</color>
     <!--aPP评价界面-->
 
+    <color name="text_comment">#25b7df</color>
+    <color name="text_comment_ct_bg">#f4f4f4</color>
+
+    <color name="subject_child_bg_normal">#06062d</color>
+    <color name="subject_child_bg_pressed">#0d0d63</color>
+
+    <color name="system_message_bg_normal">#fffefe</color>
+    <color name="system_message_bg_pressed">#e6e5e4</color>
+    <!--弹出框的背景-->
+    <color name="dialog_bg">#66000000</color>
+
+    <color name="option_anwser">#3dca16</color>
+    <color name="option_err">#FF0000</color>
+
     <!--<color name="main_lin_bg_normal">#fddd25</color>-->
     <!--<color name="main_lin_bg_pressed">#ceb004</color>-->
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorUserText">#BABABA</color>
     <color name="black">#000000</color>
-    <color name="HeaderBackColor">#fddd25</color>
-    <color name="search_edit_gray">#ffcccccc</color>
-    <color name="SearchLineColorNomal">#b3b2b2</color>
+    <color name="white">#ffffff</color>
+
     <color name="update_record_normal">#29bbfa</color>
     <color name="update_record_pressed">#0c6991</color>
 
     <color name="download_record_normal">#3dca16</color>
     <color name="download_record_pressed">#236c0f</color>
 
-    <color name="NomalBack">#f1f1f1</color>
-    <color name="white">#ffffff</color>
-    <color name="lucensy">#00000001</color>
-    <color name="translucency">#e0000000</color>
-    <color name="orange">#ffa500</color>
-    <color name="blue">#0066dd</color>
-    <!-- <color name="red">#bf242a</color> -->
-    <color name="light_orange">#fcb75c</color>
-    <color name="alpha_00">#00000000</color>
-    <color name="LightGray">#f57c7c</color>
-    <color name="trans">#50000000</color>
-    <color name="red">#fe0202</color>
-    <color name="background">#e5e5e5</color>
-    <color name="transparent_background">#50000000</color>
-    <color name="Grey">#BEBEBE</color>
+    <color name="search_editer_bg">#0d0d63</color>
+
 </resources>

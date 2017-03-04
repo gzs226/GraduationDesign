@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="#FFFFFF"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_bg"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
-            android:src="@drawable/save_iamge"/>
+            android:src="@drawable/save_iamge" />
 
         <TextView
             android:id="@+id/textview_post_name"
@@ -25,8 +25,8 @@
             android:layout_marginTop="15dp"
             android:layout_toRightOf="@id/imageview_post_usericon"
             android:text="用户昵称"
-            android:textColor="#25b7df"
-            android:textSize="16sp"/>
+            android:textColor="@color/text_comment"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textview_post_userschool"
@@ -37,8 +37,8 @@
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/imageview_post_usericon"
             android:text="用户学校"
-            android:textColor="#bfbfbf"
-            android:textSize="12sp"/>
+            android:textColor="@color/text_item_detail"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textview_post_time"
@@ -49,8 +49,8 @@
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/textview_post_userschool"
             android:text="22小时前"
-            android:textColor="#bfbfbf"
-            android:textSize="12sp"/>
+            android:textColor="@color/text_item_detail"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textview_comment_praise_number"
@@ -61,7 +61,8 @@
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="12"
-            android:textSize="12sp"/>
+            android:textColor="@color/text_item_detail"
+            android:textSize="12sp" />
 
 
         <ImageView
@@ -71,7 +72,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="13dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/askbar_no_dianzan"/>
+            android:src="@drawable/askbar_no_dianzan" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -81,7 +82,7 @@
         android:layout_marginLeft="42dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:background="#f4f4f4">
+        android:background="@color/text_comment_ct_bg">
 
         <TextView
             android:id="@+id/textview_comment_tousername"
@@ -90,8 +91,8 @@
             android:layout_marginLeft="7dp"
             android:layout_marginTop="5dp"
             android:text="用户昵称"
-            android:textColor="#25b7df"
-            android:textSize="14sp"/>
+            android:textColor="@color/text_comment"
+            android:textSize="14sp" />
 
 
         <TextView
@@ -103,8 +104,8 @@
             android:layout_marginTop="8dp"
             android:minHeight="20dp"
             android:text="这是回复的内容"
-            android:textColor="#393939"
-            android:textSize="12sp"/>
+            android:textColor="@color/text_item_detail"
+            android:textSize="12sp" />
 
     </RelativeLayout>
 
@@ -116,11 +117,11 @@
         android:layout_marginTop="5dp"
         android:minHeight="20dp"
         android:text="这是评论的内容"
-        android:textColor="#393939"
-        android:textSize="12sp"/>
+        android:textColor="@color/text_item_detail"
+        android:textSize="12sp" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="5dp"/>
+        android:layout_height="5dp" />
 
 </LinearLayout>

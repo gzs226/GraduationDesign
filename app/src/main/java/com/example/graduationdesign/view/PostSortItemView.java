@@ -1,6 +1,7 @@
 package com.example.graduationdesign.view;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -23,13 +24,16 @@ public class PostSortItemView extends LinearLayout implements View.OnClickListen
 
     private int sortModel = -1;
     private SortItemOnClickListener mSortItemOnClickListener;
+    private Context context;
 
     public PostSortItemView(Context context) {
         this(context, null);
+        this.context = context;
     }
 
     public PostSortItemView(final Context context, AttributeSet attrs) {
         super(context, attrs);
+        this.context = context;
         //在构造函数中将Xml中定义的布局解析出来。
         mLayoutInflater = LayoutInflater.from(context).inflate(R.layout.view_post_sort, this, true);
         InitBindView();
@@ -55,10 +59,10 @@ public class PostSortItemView extends LinearLayout implements View.OnClickListen
 
     private void InitItemView(int model) {
         for (int i = 0; i < 5; i++) {
-            if (ArrTextView[i].getId() == model) {
-                ArrTextView[i].setTextColor(MyColor.TextPostSortSelect);
-            }else{
-                ArrTextView[i].setTextColor(MyColor.TextPostSortUnselect);
+            if (ArrTextView[i].getId() == model) {//text_chapter_detail
+                ArrTextView[i].setTextColor(ContextCompat.getColor(context,R.color.text_chapter_detail));
+            } else {
+                ArrTextView[i].setTextColor(ContextCompat.getColor(context,R.color.text_chapter));
             }
         }
     }
@@ -92,14 +96,13 @@ public class PostSortItemView extends LinearLayout implements View.OnClickListen
     private void setItemView(int model) {
         for (int i = 0; i < 5; i++) {
             if (ArrTextView[i].getId() == model) {
-                ArrTextView[i].setTextColor(MyColor.TextPostSortSelect);
-            }else{
-                ArrTextView[i].setTextColor(MyColor.TextPostSortUnselect);
+                ArrTextView[i].setTextColor(ContextCompat.getColor(context,R.color.text_chapter_detail));
+            } else {
+                ArrTextView[i].setTextColor(ContextCompat.getColor(context,R.color.text_chapter));
             }
         }
-       mSortItemOnClickListener.SortItemChanges(model);
+        mSortItemOnClickListener.SortItemChanges(model);
     }
-
 
 
     public interface SortItemOnClickListener {

@@ -3,6 +3,7 @@ package com.example.graduationdesign.activity;
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -71,7 +72,7 @@ public class UserExamTimeActivity extends Activity {
         //int color, String text,  String keyword
         //KeywordUtil.matcherSearchTitle(MyColor.KeyWordsText, data, "文章");
 
-        testKeywords.setText(KeywordUtil.matcherSearchTitle(MyColor.KeyWordsText, data, "文章"));
+        testKeywords.setText(KeywordUtil.matcherSearchTitle(ContextCompat.getColor(UserExamTimeActivity.this,R.color.option_err), data, "文章"));
     }
 
     /**

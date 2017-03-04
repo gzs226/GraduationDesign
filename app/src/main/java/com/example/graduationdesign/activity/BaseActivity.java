@@ -5,6 +5,7 @@ import android.app.ActionBar;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.Window;
 import android.view.WindowManager;
 

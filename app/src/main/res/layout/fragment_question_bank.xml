@@ -11,6 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="54dp" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
     <!--
      android:groupIndicator="@null" 取消默认图片
      android:childIndicatorLeft 设置孩子左边间距
@@ -21,7 +25,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="#FFFFFF"
+        android:background="@color/login_bg"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -44,7 +48,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:gravity="center_horizontal"
-                android:text="错题" />
+                android:text="错题"
+                android:textColor="@color/text_item" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,7 +72,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:gravity="center_horizontal"
-                android:text="收藏" />
+                android:text="收藏"
+                android:textColor="@color/text_item" />
         </LinearLayout>
 
         <LinearLayout
@@ -90,14 +96,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:gravity="center_horizontal"
-                android:text="笔记" />
+                android:text="笔记"
+                android:textColor="@color/text_item" />
         </LinearLayout>
 
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp" />
+        android:layout_height="1dp"
+        android:background="@color/main_line" />
 
     <ExpandableListView
         android:id="@+id/expandablelist"

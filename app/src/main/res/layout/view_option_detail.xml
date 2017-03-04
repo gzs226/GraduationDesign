@@ -27,7 +27,7 @@
             android:gravity="center_vertical"
             android:paddingTop="2dp"
             android:text="马克思是 产阶级和人类解 原理"
-            android:textColor="#636363"
+            android:textColor="@color/text_item"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -53,7 +53,7 @@
             android:gravity="center_vertical"
             android:paddingTop="2dp"
             android:text="马克思是 产阶级和人类解 原理"
-            android:textColor="#636363"
+            android:textColor="@color/text_item"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -79,7 +79,7 @@
             android:gravity="center_vertical"
             android:paddingTop="2dp"
             android:text="马克思是 产阶级和人类解产阶级和人类解产阶级和人类解产阶级和人类解 原理"
-            android:textColor="#636363"
+            android:textColor="@color/text_item"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -105,7 +105,7 @@
             android:gravity="center_vertical"
             android:paddingTop="2dp"
             android:text="马克思是 产阶级和人类解 原理"
-            android:textColor="#636363"
+            android:textColor="@color/text_item"
             android:textSize="16sp" />
 
     </LinearLayout>

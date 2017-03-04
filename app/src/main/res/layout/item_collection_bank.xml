@@ -14,7 +14,7 @@
         android:layout_marginBottom="10dp"
         android:maxLines="3"
         android:text="   帖子的主题帖子的主题帖子的主题帖子的主题帖子的主题帖子的主题帖子的主题帖子的主题帖子的主题帖子的主题"
-        android:textColor="#515151"
+        android:textColor="@color/text_item"
         android:textSize="18sp" />
 
     <View

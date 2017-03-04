@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="30dp"
-    android:background="#FFFFFF"
+    android:background="@color/login_bg"
     android:orientation="horizontal">
 
     <TextView
@@ -11,7 +11,7 @@
         android:layout_marginLeft="20dp"
         android:gravity="center_vertical"
         android:text="最新评论"
-        android:textColor="#151515"
+        android:textColor="@color/text_item"
         android:textSize="14sp" />
 
     <View
@@ -20,7 +20,7 @@
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
-        android:background="#c7c7c7" />
+        android:background="@color/main_line" />
 
     <TextView
         android:layout_width="match_parent"
@@ -28,6 +28,6 @@
         android:layout_marginLeft="5dp"
         android:gravity="center_vertical"
         android:text="只看楼主"
-        android:textColor="#c1bebe"
+        android:textColor="@color/text_item_detail"
         android:textSize="14sp" />
 </LinearLayout>

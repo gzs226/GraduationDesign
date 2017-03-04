@@ -21,7 +21,7 @@
         android:gravity="center"
         android:singleLine="true"
         android:text="马原"
-        android:textColor="#3e3e3e"
+        android:textColor="@color/text_item"
         android:textSize="16sp"/>
 
 
@@ -33,7 +33,7 @@
         android:gravity="right"
         android:padding="5dp"
         android:text="519题"
-        android:textColor="#808080"
+        android:textColor="@color/text_item"
         android:textSize="14sp"/>
 
 

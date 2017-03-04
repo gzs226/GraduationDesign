@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="25dp"
-    android:background="#fffefe"
+    android:background="@color/login_bg"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
@@ -13,7 +13,7 @@
         android:layout_marginLeft="15dp"
         android:gravity="center_vertical"
         android:text="全部"
-        android:textColor="#d69d01"
+        android:textColor="@color/text_chapter_detail"
         android:textSize="12sp" />
 
     <TextView
@@ -23,7 +23,7 @@
         android:layout_marginLeft="15dp"
         android:gravity="center_vertical"
         android:text="考试"
-        android:textColor="#a3a2a2"
+        android:textColor="@color/text_chapter"
         android:textSize="12sp" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:layout_marginLeft="15dp"
         android:gravity="center_vertical"
         android:text="考试经验"
-        android:textColor="#a3a2a2"
+        android:textColor="@color/text_chapter"
         android:textSize="12sp" />
 
     <TextView
@@ -43,7 +43,7 @@
         android:layout_marginLeft="15dp"
         android:gravity="center_vertical"
         android:text="复习交流"
-        android:textColor="#a3a2a2"
+        android:textColor="@color/text_chapter"
         android:textSize="12sp" />
 
     <TextView
@@ -53,6 +53,6 @@
         android:layout_marginLeft="15dp"
         android:gravity="center_vertical"
         android:text="求助答疑"
-        android:textColor="#a3a2a2"
+        android:textColor="@color/text_chapter"
         android:textSize="12sp" />
 </LinearLayout>

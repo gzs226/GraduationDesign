@@ -12,14 +12,18 @@
     <string name="no_data">暂无数据</string>
     <string name="more">加载中</string>
 
-    <drawable name="system_message_bg_normal">#fffefe</drawable>
-    <drawable name="system_message_bg_pressed">#e6e5e4</drawable>
+
+
+    <drawable name="system_message_bg_normal">@color/system_message_bg_normal</drawable>
+    <drawable name="system_message_bg_pressed">@color/system_message_bg_pressed</drawable>
 
     <drawable name="subject_group_bg_normal">@color/item_bg_normal</drawable>
     <drawable name="subject_group_bg_pressed">@color/item_bg_press</drawable>
 
-    <drawable name="subject_child_bg_normal">#f4f4f4</drawable>
-    <drawable name="subject_child_bg_pressed">#ffe59d</drawable>
+    <drawable name="subject_child_bg_normal">@color/subject_child_bg_normal</drawable>
+    <drawable name="subject_child_bg_pressed">@color/subject_child_bg_pressed</drawable>
+
+
 
     <!--<drawable name="main_lin_bg_normal">#fddd25</drawable>-->
     <!--<drawable name="main_lin_bg_pressed">#ceb004</drawable>-->

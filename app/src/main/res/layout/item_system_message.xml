@@ -9,11 +9,11 @@
         android:id="@+id/text_system_messagetitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ededed"
+        android:background="@color/main_line"
         android:lines="1"
         android:padding="10dp"
         android:text="消息一：社保卡将基本实现全国一卡通。"
-        android:textColor="#be0000"
+        android:textColor="@color/text_wrong_option"
         android:textSize="18sp" />
 
 
@@ -26,7 +26,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="    消息一：社保卡将基本实现全国一卡通。根据人社部《关于加快推进社会保障卡应用的意见》，未来社保卡的应用十分广泛，应用目录可分九大类102项，涉及到日常生活工作中的方方面面。至2017年底，社保卡还可跨地区、跨业务直接办理个人的各项人力资源和社会保障事务，基本实现全国社保一卡通。"
-        android:textColor="#8e8e8e"
+        android:textColor="@color/text_item_detail"
         android:textSize="16sp" />
 
 </LinearLayout>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="#60000000"
-              android:orientation="vertical"
-              android:padding="10dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#00000000"/>
+        android:background="@color/transparent" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
-        android:background="#ffffff"
+        android:background="@color/login_bg"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -27,19 +27,18 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:background="#ffffff"
             android:gravity="center"
             android:padding="5dp"
             android:text="我的学校"
             android:textColor="@color/but_dialog_frame"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginBottom="3dp"
-            android:background="#efeeee"/>
+            android:background="@color/main_line" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -61,8 +60,8 @@
                 CityPicker - CityPicker仿美团等选择城市列表。"
                 android:paddingBottom="5dp"
                 android:paddingTop="5dp"
-                android:textColor="#837212"
-                android:textSize="16sp"/>
+                android:textColor="@color/text_item_detail"
+                android:textSize="16sp" />
         </ScrollView>
 
         <Button
@@ -74,13 +73,13 @@
             android:layout_marginRight="30dp"
             android:background="@drawable/gender_enter_button"
             android:text="关闭"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"/>
+            android:textColor="@color/head_title_text"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#00000000"/>
+        android:background="@color/transparent" />
 </LinearLayout>
