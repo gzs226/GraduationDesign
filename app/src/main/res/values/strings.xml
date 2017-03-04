@@ -32,7 +32,8 @@
     <drawable name="main_lin_bg_pressed">@color/menu_bg_press</drawable>
 
 
-    <drawable name="question_option_lin_bg_normal">#ffffff</drawable>
-    <drawable name="question_option_lin_bg_pressed">#dcd7ba</drawable>
+    <drawable name="question_option_lin_bg_normal">@color/question_option_lin_bg_normal</drawable>
+    <drawable name="question_option_lin_bg_pressed">@color/question_option_lin_bg_normal</drawable>
+
 
 </resources>

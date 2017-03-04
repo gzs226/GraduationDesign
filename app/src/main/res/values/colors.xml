@@ -56,7 +56,8 @@
     <color name="text_wrong_option">#ff0000</color>
     <color name="text_right_option">#2bd52b</color>
 
-    <color name="analysis_bg">#f9f4e9</color>
+    <color name="analysis_bg">#0a0a4e</color>
+    <color name="text_analysis">#5e92ba</color>
     <color name="but_handin_bg">#ffffff</color>
     <color name="but_handin_frame">#fddd25</color>
     <!--做题界面-->
@@ -115,5 +116,9 @@
     <color name="text_mes_unedit">#5e92ba</color>
     <color name="text_mes_edit">#bababa</color>
 
+    <color name="option_bg">#0a0a4e</color>
+
+    <color name="question_option_lin_bg_normal">#0a0a4e</color>
+    <color name="question_option_lin_bg_pressed">#dcd7ba</color>
 
 </resources>
